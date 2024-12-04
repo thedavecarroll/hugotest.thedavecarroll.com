@@ -1,0 +1,9 @@
+.article-header {
+    .article-image {
+        img {
+            max-height: 10px;  // Adjust this value as needed
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

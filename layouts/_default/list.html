@@ -1,0 +1,69 @@
+{{ define "main" }}
+<div>
+    <section class="section-card">
+        <div class="section-details">
+            {{ $dict := .Site.Data.dictionary.terms }}
+            {{ $term := .Title }}
+            {{ $lowered := $term | lower }}
+            {{ $result := $lowered }}
+            {{ range $key, $value := $dict }}
+                {{ if in $lowered $key }}
+                    {{ $result = replace $result $key $value }}
+                {{ end }}
+            {{ end }}
+
+            {{/*  <div class="section-count">
+                {{ T "list.page" (len .Pages) }}
+            </div>  */}}
+
+            <h1 class="section-term">{{ $result | title }}</h1>
+
+            {{ with .Params.description }}
+                <div class="section-description">{{ . }}</div>
+            {{ end }}
+        </div>
+
+        {{ with .Params.image }}
+            <div class="section-image">
+                <img src="{{ . }}" alt="{{ $result | title }}" class="section-icon" />
+            </div>
+        {{ end }}
+    </section>
+
+    {{- $subsections := .Sections -}}
+    {{- $pages := .Pages | complement $subsections -}}
+    
+    {{- if eq (len $pages) 0 -}}
+        {{/* If there are no normal pages, display subsections in list style, with pagination */}}
+        {{/* This happens with taxonomies like categories or tags */}}
+        {{- $pages = $subsections -}}
+        {{- $subsections = slice -}}
+    {{- end -}}
+
+    {{- with $subsections -}}
+        <h2 class="section-title">{{ T "list.subsection" (len $subsections) }}</h2>
+        <div class="subsection-list">
+            <div class="article-list--tile">
+                {{ range . }}
+                    {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "section") }}
+                {{ end }}
+            </div>
+        </div>
+    {{- end -}}
+
+    {{/* List only pages that are not a subsection */}}
+    {{ $paginator := .Paginate $pages }}
+
+    <div class="article-list--compact">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/compact" . }}
+        {{ end }}
+    </div>
+
+    {{- partial "pagination.html" . -}}
+    {{ partialCached "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

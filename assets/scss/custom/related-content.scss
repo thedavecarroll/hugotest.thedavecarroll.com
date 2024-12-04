@@ -1,0 +1,23 @@
+.related-contents {
+    .article-list--compact {
+        margin-top: 0.5rem;
+        
+        article {
+            max-height: none;
+            background-color: var(--card-background);
+            transition: box-shadow 0.2s ease;
+            
+            .article-title {
+                color: var(--card-text-color-main);
+            }
+            
+            .article-preview {
+                color: var(--card-text-color-secondary);
+            }
+            
+            &:hover {
+                box-shadow: var(--shadow-l2);
+            }
+        }
+    }
+}

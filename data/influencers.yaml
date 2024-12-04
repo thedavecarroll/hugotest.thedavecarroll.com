@@ -1,0 +1,47 @@
+thedavecarroll:
+  name: Dave Carroll
+  blog: https://thedavecarroll.com
+  linkpage: https://thedavecarroll.com/links/
+  social: https://bsky.app/profile/thedavecarroll.com
+  github: thedavecarroll
+  bluesky: thedavecarroll.com
+  linkedin: thedavecarroll
+  mastodon: https://fosstodon.org/@thedavecarroll
+
+jeffhicks:
+  name: Jeff Hicks
+  blog: https://jdhitsolutions.com/blog/
+  linkpage: https://jdhitsolutions.github.io/
+  social: https://bsky.app/profile/jdhitsolutions.com
+
+kevmar:
+  name: Kevin Marquette
+  blog: https://powershellexplained.com
+
+mikefrobbins:
+  name: Mike F Robbins
+  blog: https://mikefrobbins.com
+  linkpage: false
+  social: https://bsky.app/profile/mikefrobbins.com
+
+dougfinke:
+  name: Doug Finke
+  blog: https://dfinke.github.io/
+  linkpage: null
+  social: dougfinke
+
+michaelsimmons:
+  name: Michael Simmons
+  blog: https://ilovepowershell.com
+  linkpage: null
+  social: null
+
+patrickdebois:
+  name: Patrick Debois
+  blog: https://www.jedi.be
+  linkpage: null
+  social: https://bsky.app/profile/patrickdebois.bsky.social
+
+warrenframe:
+  name: Warren Frame
+  blog: https://ramblingcookiemonster.github.io

@@ -1,0 +1,17 @@
+// Import color palette first
+@import "custom/color-palette";
+
+// Import mode-specific settings
+@import "custom/dark-mode";
+@import "custom/light-mode";
+
+// Import components
+@import "custom/section";
+@import "custom/article-header";
+@import "custom/blockquote";
+@import "custom/module";
+@import "custom/notice";
+@import "custom/related-content";
+@import "custom/influencer";
+@import "custom/update";
+@import "custom/links";

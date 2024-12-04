@@ -1,0 +1,30 @@
+{{ if or .Params.Tags .Params.Categories }}
+<div class="section article-tags">
+    {{ with .GetTerms "categories" }}
+        {{ range . }}
+            {{ $dict := $.Site.Data.dictionary.terms }}
+            {{ $term := .LinkTitle | lower }}
+            {{ $result := $term }}
+            {{ range $key, $value := $dict }}
+                {{ if in $term $key }}
+                    {{ $result = replace $result $key $value }}
+                {{ end }}
+            {{ end }}
+            <a href="{{ .RelPermalink }}">{{ $result | title }}</a>
+        {{ end }}
+    {{ end }}
+    {{ with .GetTerms "tags" }}
+        {{ range . }}
+            {{ $dict := $.Site.Data.dictionary.terms }}
+            {{ $term := .LinkTitle | lower }}
+            {{ $result := $term }}
+            {{ range $key, $value := $dict }}
+                {{ if in $term $key }}
+                    {{ $result = replace $result $key $value }}
+                {{ end }}
+            {{ end }}
+            <a href="{{ .RelPermalink }}">{{ $result | title }}</a>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

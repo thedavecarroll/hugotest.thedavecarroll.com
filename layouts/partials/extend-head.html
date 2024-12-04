@@ -1,0 +1,18 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find all external links
+      const links = document.querySelectorAll('a[href^="http"]');
+      links.forEach(link => {
+        // Skip links to the current domain
+        if (!link.href.startsWith(window.location.origin)) {
+          // Only add attributes if they don't already exist
+          if (!link.hasAttribute('target')) {
+            link.setAttribute('target', '_blank');
+          }
+          if (!link.hasAttribute('rel')) {
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        }
+      });
+    });
+</script>
