@@ -18,3 +18,6 @@ terms:
   cicd: CI/CD
   devops: DevOps
   dns: DNS
+  tls: TLS
+  ssl: SSL
+  platyps: platyPS
