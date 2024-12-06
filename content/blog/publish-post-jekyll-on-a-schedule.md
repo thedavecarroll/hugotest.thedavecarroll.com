@@ -27,7 +27,7 @@ For this blog, I use several free and open-source technologies.
 GitHub and GitHub Pages provides source control and serves the static Jekyll site.
 When I commit a new blog post, Travis CI picks up the change and builds the site and pushes it into the `gh-pages` branch.
 
-If you would like to know more, check out my post, [How I Blog]({{< relref "posts/how-i-blog.md" >}}), on this site.
+If you would like to know more, check out my post, [How I Blog]({{< relref "blog/how-i-blog.md" >}}), on this site.
 
 What's important for this post is that I did not want to move my site or change the technology stack.
 

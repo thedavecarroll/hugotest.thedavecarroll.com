@@ -11,8 +11,8 @@ image: images/soft-skills/psconfbookv2.png
 
 This article is the last in a series of three which is a republishing of my chapter on soft skills from the [PowerShell Conference Book Volume 2](https://leanpub.com/psconfbook2).
 
-If you haven't read the article on [communication]({{< relref "posts/soft-skills-part-1.md" >}})
-or article on [collaboration]({{< relref "posts/soft-skills-part-2.md" >}}),
+If you haven't read the article on [communication]({{< relref "powershell/soft-skills-part-1.md" >}})
+or article on [collaboration]({{< relref "powershell/soft-skills-part-2.md" >}}),
 that's okay, as each article has it's own topics.
 I would suggest to read them though, as it will help round out your general knowledge of soft skills.
 

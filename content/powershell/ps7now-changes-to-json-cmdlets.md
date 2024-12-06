@@ -509,7 +509,7 @@ False
 And that's how you validate JSON objects in **PowerShell 7**, both for syntax and against a predefined schema.
 
 {{< notice type="tip" >}}
-In my blog post on [Writing Windows Events with Smart EventData]({{< relref "posts/windows-event-logs-eventdata.md" >}}),
+In my blog post on [Writing Windows Events with Smart EventData]({{< relref "powershell/windows-event-logs-eventdata.md" >}}),
 I mention using EventData schema for each event type that you want to write.
 
 Using JSON Schema and the `Test-Json` cmdlet would help your team with documentation and implementation of consistent Smart EventData.

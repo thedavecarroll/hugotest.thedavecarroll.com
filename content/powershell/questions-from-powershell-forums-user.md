@@ -43,7 +43,7 @@ This tells me that the indexing or searching in GitHub isn't 100% accurate (at l
 A standard internet search returned the article, my DemoModule gist, but again not the PSTemperature repo.
 {{< /notice >}}
 
-In the next [highly popular article]({{< relref "posts/how-i-implement-module-variables.md" >}}), I focus on variable scope, specifically the script scoped variable.
+In the next [highly popular article]({{< relref "powershell/how-i-implement-module-variables.md" >}}), I focus on variable scope, specifically the script scoped variable.
 When you use script scoped in your module, it's available to all commands within that module.
 Also, when you `Remove-Module`, the variable is removed from your session.
 My article announcement Tweet was retweeted by Don Jones and, based on the page views,
