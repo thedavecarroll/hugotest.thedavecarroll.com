@@ -70,7 +70,6 @@ VERBOSE: Performing the operation "Update-Help" on target "PoShEvents, Current V
 VERBOSE: PoShEvents: Updated C:\PowerShell\GitHub\PoShEvents\PoShEvents\en-US\about_PoShEvents.help.txt. Culture en-US Version 0.2.1
 VERBOSE: PoShEvents: Updated C:\PowerShell\GitHub\PoShEvents\PoShEvents\en-US\PoShEvents-help.xml. Culture en-US Version 0.2.1
 ```
-{: style="color: gold"}
 
 This proves that the updatable help works when pulling from the local source.
 
@@ -107,7 +106,6 @@ TLS 1.2 protocol and tested the URL again successfully.
 ```console
 Ssl3, Tls
 ```
-{: style="color: whitesmoke"}
 
 ```csharp
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls,[Net.SecurityProtocolType]::Tls11,[Net.SecurityProtocolType]::Tls12
@@ -128,7 +126,6 @@ VERBOSE: Performing the operation "Update-Help" on target "PoShEvents, Current V
 VERBOSE: PoShEvents: Updated C:\PowerShell\GitHub\PoShEvents\PoShEvents\en-US\about_PoShEvents.help.txt. Culture en-US Version 0.2.1
 VERBOSE: PoShEvents: Updated C:\PowerShell\GitHub\PoShEvents\PoShEvents\en-US\PoShEvents-help.xml. Culture en-US Version 0.2.1
 ```
-{: style="color: gold"}
 
 ## Setting Strong Cryptography for .Net Framework
 
