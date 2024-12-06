@@ -1,10 +1,10 @@
 ---
-title: Articles
-description: Articles on PowerShell
+title: PowerShell Articles
+# description: Articles on PowerShell
 image: /icons/brand-powershell.svg
 menu:
     main:
-        name: Articles
+        name: PowerShell
         weight: 20
         params:
             icon: brand-powershell
