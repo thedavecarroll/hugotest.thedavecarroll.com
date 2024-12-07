@@ -12,11 +12,11 @@
            {{ range sort (where .Site.Data.modules.modules "status" "ne" "inactive") "order" "asc" }}
            <div class="module-card">
                <div class="module-header">
-                   <h2 class="module-title">{{ .name }}</h2>
-                   {{ if eq .status "active" }}
-                   <span class="status-badge status-active">Active</span>
-                   {{ end }}
-               </div>
+                    <h2 class="module-title">{{ .name }}</h2>
+                    {{ if eq .status "active" }}
+                        <span class="status-badge status-active">Active</span>
+                    {{ end }}
+                </div>
                
                <p class="module-description">{{ .description }}</p>
 

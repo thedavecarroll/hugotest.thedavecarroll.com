@@ -27,10 +27,10 @@ params:
     githubUsername: thedavecarroll
 
     mainSections:
-        - PowerShell
-        - Blogging
-        - Retro
-        - Personal
+        - powershell
+        - blog
+        - retro
+        - personal
     featuredImageField: image
     rssFullContent: true
     favicon: /icons/favicon.ico

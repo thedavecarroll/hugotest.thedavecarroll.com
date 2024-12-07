@@ -25,9 +25,10 @@
 
         {{ with .Params.image }}
             <div class="section-image">
-                <img src="{{ . }}" alt="{{ $result | title }}" class="section-icon" />
+                <img src="{{ . }}" class="section-icon" alt="{{ $result | title }}" />
             </div>
         {{ end }}
+
     </section>
 
     {{- $subsections := .Sections -}}
