@@ -20,8 +20,8 @@ pagination:
 #   retro: /:section/:slug/
 #   personal: /:section/:slug/
 
-permalinks:
-    posts: /posts/:slug/
+# permalinks:
+#     posts: /posts/:slug/
 
 params:
     githubUsername: thedavecarroll
