@@ -3,7 +3,7 @@ title: How I Implement Module Variables
 description: Originally, I used globally scoped variables for one of my modules to keep track of session data, but now I use a module variable.
 image: /images/module-variables.png
 published: 2018-10-14
-lastUpdated: 2018-10-16
+lastMod: 2018-10-16
 tags: ["powershell", "module", "module variables", "global variables"]
 categories: ["PowerShell"]
 ---

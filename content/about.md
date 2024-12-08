@@ -1,7 +1,6 @@
 ---
 title: About
 url: /about/
-image: images/header.jpeg
 readingTime: false
 menu: 
     main:
@@ -10,6 +9,8 @@ menu:
         params:
             icon: book
 ---
+
+![Dave's Technical Journal](/images/header.jpeg)
 
 I started my career nearly 30 years ago at a small Mom-and-Pop computer store, building and repairing home computer systems and peripherals.
 To put that time into perspective, we rented parallel CD-ROM drives and CD-ROM based games because the drives were cost prohibitive to the average gamer.

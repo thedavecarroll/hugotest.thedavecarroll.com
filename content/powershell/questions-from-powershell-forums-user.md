@@ -3,7 +3,7 @@ title: Questions from a PowerShell.org Forums User
 description: A PowerShell.org Forums user asked me a few questions about my PowerShell journey and here are my answers.
 image: /images/powershellforums.png
 published: 2022-08-30
-lastUpdated: 2022-09-12
+lastMod: 2022-09-12
 tags: ["blog", "powershell", "powershell concepts", "learn powershell", "powershell beginner", "how to", "career"]
 categories: ["PowerShell"]
 ---

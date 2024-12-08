@@ -2,7 +2,7 @@
 title: Refreshing the Blog
 description: In this article, I'll go into detail on how I rejuvenated this site, focusing on key technical aspects along the way.
 published: 2022-09-13
-lastUpdated: 2020-06-18
+lastMod: 2020-06-18
 tags: ["blog", "powershell blog", "github actions", "github pages", "giscus", "giscus comments", "docker"]
 categories: ["blog"]
 ---
@@ -16,7 +16,7 @@ It had been over a year since I published any article prior to the end of August
 A myriad of reasons all claim a part of "why didn't I".
 Perhaps ironically (for a technical site), one of the reasons was purely technical.
 
-As discussed in an early article, [How I Blog]({{< relref "blog/how-i-blog.md" >}}), this site is a generated static site powered by {{< link id="jekyllrb">}}.
+As discussed in an early article, [How I Blog]({{< relref "blog/how-i-blog.md" >}}), this site is a generated static site powered by [Jekyll](https://jekyllrb.com/).
 Though with all of its simplistic power, like its eponymous origin, there can be a dark side to a Jekyll-based site.
 
 In this article, I'll go into detail on how I rejuvenated this site, focusing on key technical aspects along the way, and subdued the evil Mr. Hyde.

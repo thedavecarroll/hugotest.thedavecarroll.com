@@ -2,7 +2,7 @@
 title: How I Blog
 description: What technologies are used in my blog?
 published: 2018-08-26
-lastUpdated: 2020-06-18
+lastMod: 2020-06-18
 tags: ["blog", "jekyll", "travis ci", "github", "staticman"]
 categories: ["blog"]
 ---
@@ -21,7 +21,7 @@ Once I realized what had happened to my site, I converted it to a static hosted 
 It solved the problem of a vulnerable site and poor performance.
 
 I've been toying around with the idea of creating a blog for PowerShell for a few years now, ever since I started
-working with another PowerShell blogger, {{< influencer "michaelsimmons" >}}, who publishes {{< link id="ilovepsh" >}}.
+working with another PowerShell blogger, {{< influencer "michaelsimmons" >}}, who publishes [I Love PowerShell](https://ilovepowershell.com).
 
 As I was learning how to build my own modules, with finesse --- not just thrown together, I kept finding enlightening
 posts on blogs like {{< influencer "kevmar" >}} and {{< influencer "warrenframe" >}}.
@@ -44,8 +44,8 @@ Even if you don't opt to use GitHub (free for public repositories), you can stil
 I'm fully convinced that source control is necessary for code, and a blog is really nothing but code.
 Therefore, it was an easy decision to use a GitHub repository for my blog and then to configure it to publish using GitHub Pages.
 
-Visit GitHub Help for more information on how to {{< link id="new-github-account" text="create a GitHub account" >}}, {{< link id="create-a-repo" text="create a repository" >}}, and
-information on {{< link id="github-pages" text="GitHub Pages" >}}.
+Visit GitHub Help for more information on how to [create a GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/), [create a repository](https://help.github.com/articles/create-a-repo/), and
+information on [GitHub Pages](https://help.github.com/articles/what-is-github-pages/).
 
 ### Repository
 
@@ -73,17 +73,17 @@ Each branch of my repo plays a role in the production of my blog.
 
 ## Jekyll Framework
 
-Jekyll is {{< link id="top-ten-static-gen" text="one of the most used" >}} static site generators.
+Jekyll is [one of the most used](https://www.netlify.com/blog/2017/05/25/top-ten-static-site-generators-of-2017/) static site generators.
 It's built on Ruby and renders content with Markdown and Liquid templates.
 
-GitHub Pages deploy sites using Jekyll and provides a {{< link id="jekyll-themes" text="handful of themes" >}}.
+GitHub Pages deploy sites using Jekyll and provides a [handful of themes](https://help.github.com/articles/about-jekyll-themes-on-github/).
 
-Check out the {{< link id="jekyllrb" >}} site for more details.
+Check out the [Jekyll](https://jekyllrb.com/) site for more details.
 
 ## Minimal Mistakes
 
-The theme that I chose for simplicity is Minimal Mistakes by Michael Rose at {{< link id="mademistakes" >}}.
-He provides a {{< link id="minimal-mistakes" >}} demo site that can show you the theme's capabilities.
+The theme that I chose for simplicity is Minimal Mistakes by Michael Rose at [Made Mistakes](ttps://mademistakes.com/).
+He provides a [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes) demo site that can show you the theme's capabilities.
 
 The cool thing about most of the Jekyll themes is that they, themselves, are in GitHub repos.
 You can download the full repo or fork it and have a site up and running in short order.
@@ -165,7 +165,7 @@ When I want to get under the hood again of the theme, I will look at implementin
 
 ### Staticman API Webhook
 
-For Staticman to work, there are a few quick configuration steps needed that are laid out in the {{< link id="staticman" >}}.
+For Staticman to work, there are a few quick configuration steps needed that are laid out in the [Staticman documentation](https://staticman.net/docs/).
 
 Additionally, you will need a `staticman.yml` configuration file.
 This file is included in the theme's repo.
@@ -182,7 +182,7 @@ The visitor's email is stored as a hash value to keep it relatively safe.
 
 ### Gravatar
 
-The theme will use the {{< link id="gravatar" text="Gravatar" >}} service to provide a graphic that the user has previously configured.
+The theme will use the [Gravatar](https://en.gravatar.com/support/what-is-gravatar/) service to provide a graphic that the user has previously configured.
 
 ## Jekyll Build
 
@@ -219,7 +219,7 @@ It drives true DevOps.
 On GitHub, I configured the Travis CI service for my blog repo.
 
 {{< notice type="note" >}}
-Travis CI {{< link id="travis-ci-announcement" text="announced in May" >}} that open source projects would be able to use `travis-ci.com`.
+Travis CI [announced in May](https://docs.travis-ci.com/user/open-source-on-travis-ci-com/) that open source projects would be able to use `travis-ci.com`.
 Sometime soon, I'll work on upgrading to the new method which uses GitHub Apps and has greater benefits.
 {{< /notice >}}
 
@@ -247,13 +247,13 @@ gh-pages branch.
 Spinning up a blog in this manner takes patience and determination, but the rewards include learning new technologies, such as GitHub, Ruby, and Jekyll.
 It's taken me several steps toward automation, CI/CD, and DevOps.
 
-Remember, because all of this is hosted publicly by GitHub, you can see everything in {{< link id="my-site-repo" >}}.
+Remember, because all of this is hosted publicly by GitHub, you can see everything in [my site's repository](https://github.com/thedavecarroll/thedavecarroll.com).
 Check out the closed Pull Requests. Check out the folder structure and the files.
 
 I hope this post was informative. Feel free to leave a comment below.
 
 {{< update date="2018-08-29" >}}
-I used the code from {{< link id="codersblock" >}} to change the color syntax of GitHub Gists.
+I used the code from [Coder's Block](https://codersblock.com/blog/customizing-github-gists) to change the color syntax of GitHub Gists.
 {{< /update >}}
 
 {{< update date="2020-06-18" >}}

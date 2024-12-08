@@ -3,7 +3,7 @@ title: Publish a Post for a Jekyll Site on a Schedule
 description: Learn how to schedule the publishing of a post using the GitHub Action, Jekyll Publish Drafts, on a GitHub pages hosted site.
 image: /images/publish-drafts/marketplace-action.png
 published: 2020-05-11T09:00:00-0500
-lastUpdated: 2020-06-18
+lastMod: 2020-06-18
 tags: ["blog", "jekyll", "github", "github actions", "github pages", "ci"]
 categories: ["blog"]
 ---

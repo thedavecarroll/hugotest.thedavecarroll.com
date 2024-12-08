@@ -1,6 +1,7 @@
 ---
 title: Links
 url: /links/
+image: /images/chain-links.jpg
 readingTime: false
 menu: 
     main:

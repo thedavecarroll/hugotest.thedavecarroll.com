@@ -1,6 +1,6 @@
 ---
 title: "#PSFollowFriday Tweet with BluebirdPS"
-description: Learn how to use BluebirdPS to generate and publish a #PSFollowFriday Tweet.
+description: "Learn how to use BluebirdPS to generate and publish a #PSFollowFriday Tweet."
 published: 2021-06-09
 tags: ["bluebirdps", "twitter", "twitter client", "twitter api", "tweet", "social media", "powershell module"]
 categories: ["PowerShell"]

@@ -2,7 +2,7 @@
 title: Download Newest Sysinternals Tools
 description: Download recently updated Sysinternals tools
 published: 2018-09-03
-lastUpdated: 2018-09-05
+lastMod: 2018-09-05
 tags: ["powershell", "sysinternals"]
 categories: ["PowerShell"]
 ---

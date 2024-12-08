@@ -10,6 +10,8 @@ menu:
             icon: home
 ---
 
+![PowerShell Banner](/images/header.jpeg)
+
 Welcome to my technical journal where I share my experiences and knowledge about PowerShell, general IT, and retrocomputing. Here you'll find articles about:
 
 * PowerShell scripting and automation

@@ -1,0 +1,33 @@
+.article-header {
+    position: relative;
+    margin-bottom: 2rem;
+ 
+    &.has-image {  // New class for when image exists
+        .article-details {
+            padding-right: 160px;  // Only add padding when image exists
+        }
+    }
+ 
+    .article-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100%;
+        
+        img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: var(--card-border-radius);
+        }
+    }
+ 
+    .article-details {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(var(--card-background-color), 0.9);
+        padding: 1rem;
+        border-radius: var(--card-border-radius);
+    }
+}
