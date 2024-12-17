@@ -195,7 +195,7 @@ And I wanted you to know - it wasn't you, it was me.
 
 The last few years have been emotionally tumultuous, but I think I'm to the point where I can start publishing articles on PowerShell (and other topics) again.
 
-Over the last couple months, I've been dipping my toes back into [BluebirdPS][BluebirdPS] and a new version should be released soon.
+Over the last couple months, I've been dipping my toes back into [BluebirdPS]({{< relref "archived-links.md" >}}) and a new version should be released soon.
 
 Being asked these questions, and realizing that the answers should be published on my blog, has led me to dust off the site and repair the broken build automation and comment system.
 In fact, I'll be publishing an update to how I blog, again as soon as I can.
@@ -229,4 +229,3 @@ Minor changes to formatting.
 [KevinMarquette]: https://twitter.com/KevinMarquette
 [PowerShellExplained]: https://powershellexplained.com/
 [DeepDives]: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/overview?view=powershell-7.2
-[BluebirdPS]: https://docs.bluebirdps.dev/en/latest/

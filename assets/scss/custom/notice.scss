@@ -58,4 +58,10 @@
         .notice-icon { color: var(--error-color); }
         .notice-type { color: var(--error-color); }
     }
+
+    &.archivelink {
+        border-left: 5px solid var(--warning-color);
+        .notice-icon { color: var(--warning-color); }
+        .notice-type { color: var(--warning-color); }
+    }
 }

@@ -8,13 +8,10 @@ categories: ["PowerShell"]
 
 ## #PS7Now! PowerShell 7 Is Here!
 
-This [#PSBlogWeek][PSBlogWeek] focuses on the official release of **PowerShell 7** — the newest,
+This [#PSBlogWeek]({{< relref "archived-links.md" >}}) focuses on the official release of **PowerShell 7** — the newest,
 fastest, and best PowerShell putting the spotlight on PowerShell's Experimental Features.
 
-Get [#PS7Now][PS7Now] to experience them yourself!
-
-[PSBlogWeek]: https://twitter.com/search?q=%23PSBlogWeek&f=live
-[PS7Now]: https://twitter.com/search?q=PS7Now&f=live
+Get [#PS7Now](https://leanpub.com/ps7now/) to experience them yourself!
 
 ## Experimental Features Defined
 
@@ -219,23 +216,11 @@ The latter would be necessary when you don't need mutual exclusivity and when wr
 
 ## #PS7Now #PSBlogWeek Contributors
 
-Be sure to watch for more [#PS7Now][PS7Now]! [#PSBlogWeek][PSBlogWeek] articles from my fellow contributors and myself.
+Be sure to watch for more [#PS7Now](https://leanpub.com/ps7now/)! [#PSBlogWeek]({{< relref "archived-links.md" >}}) articles from my fellow contributors and myself.
 And be sure to follow us on Twitter and add our blogs to your feed reader.
 We can help you on your PowerShell enlightenment journey, along with many others in the PowerShell community.
 
-| Author | Twitter | Blog |
-| :----- | :----- | :----- |
-|Adam Bertram|[@adbertram](https://twitter.com/adbertram)|[https://adamtheautomator.com/](https://adamtheautomator.com/) |
-|Dave Carroll| [@thedavecarroll](https://twitter.com/thedavecarroll)|[https://powershell.anovelidea.org/](https://powershell.anovelidea.org/) |
-|Josh Duffney|[@joshduffney](https://twitter.com/joshduffney)|[http://duffney.io/](http://duffney.io/) |
-|Dan Franciscus|[@danfranciscus](https://twitter.com/danfranciscus)|[https://winsysblog.com/](https://winsysblog.com/) |
-|Jeff Hicks|[@jeffhicks](https://twitter.com/jeffhicks)|[https://jdhitsolutions.com/](https://jdhitsolutions.com/) |
-|Mike Kanakos|[@MikeKanakos](https://twitter.com/MikeKanakos)|[https://www.networkadm.in/](https://www.networkadm.in/) |
-|Josh King|[@WindosNZ](https://twitter.com/WindosNZ)|[https://toastit.dev/](https://toastit.dev/) |
-|Thomas Lee|[@doctordns](https://twitter.com/doctordns)|[https://tfl09.blogspot.com/](https://tfl09.blogspot.com/) |
-|Tommy Maynard|[@thetommymaynard](https://twitter.com/thetommymaynard)|[https://tommymaynard.com/](https://tommymaynard.com/) |
-|Jonathan Medd|[@jonathanmedd](https://twitter.com/jonathanmedd)|[https://www.jonathanmedd.net/](https://www.jonathanmedd.net/) |
-|Prateek Singh|[@singhprateik](https://twitter.com/singhprateik)|[https://ridicurious.com/](https://ridicurious.com/) |
+{{% ps7now %}}
 
 ## Summary
 

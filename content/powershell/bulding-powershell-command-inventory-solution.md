@@ -9,12 +9,10 @@ categories: ["PowerShell"]
 
 ## Introduction
 
-The latest IronScripter challenge, [Building a PowerShell Command Inventory][CommandInventory],
+The latest IronScripter challenge, [Building a PowerShell Command Inventory](https://ironscripter.us/building-a-powershell-command-inventory/),
 helps us to understand our library of PowerShell code.
 
 It is also a good way to introduce regular expressions, most commonly called *regex*.
-
-[CommandInventory]: https://ironscripter.us/building-a-powershell-command-inventory/
 
 ## Regex and PowerShell
 
@@ -29,7 +27,7 @@ The regex engine contains categories, like characters, escape characters, charac
 This allows regex patterns to be very simple or incredibly complex.
 
 There are numerous articles on regex and several questions on public forums.
-*StackOverflow over **227,700** [questions tagged with regex][SORegex].*
+*StackOverflow over **227,700** [questions tagged with regex](https://stackoverflow.com/questions/tagged/regex).*
 
 {{< notice type="note" >}}
  This article will only cover a few concepts, just enough to create the solution for the challenge.
@@ -625,18 +623,13 @@ if ($PathType -eq 'DirectoryInfo') {
 
 To learn more about regex, here are a few resources that go much deeper into the topic than this article.
 
-* [Powershell: The many ways to use regex][PSExplainedRegex] on [Kevin Marquette][kevinmarquette]'s blog
-* [A Practical Guide for Using Regex in PowerShell][DuffneyRegex] on [Josh Duffney][joshduffney]'s blog
-* [About Regular Expressions][PSAboutRegex]
-* [.Net Quick Reference][DotNetQRRegex] on Regular Expression Language
+* [Powershell: The many ways to use regex](https://powershellexplained.com/2017-07-31-Powershell-regex-regular-expression/) on [Kevin Marquette][kevinmarquette]'s blog
+* [A Practical Guide for Using Regex in PowerShell](http://duffney.io/APracticalGuideforUsingRegexinPowerShell) on [Josh Duffney][joshduffney]'s blog
+* [About Regular Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7)
+* [.Net Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) on Regular Expression Language
 
-[SORegex]: https://stackoverflow.com/questions/tagged/regex
-[PSExplainedRegex]: https://powershellexplained.com/2017-07-31-Powershell-regex-regular-expression/
 [kevinmarquette]: https://twitter.com/kevinmarquette
-[DuffneyRegex]: http://duffney.io/APracticalGuideforUsingRegexinPowerShell
 [joshduffney]: https://twitter.com/joshduffney
-[PSAboutRegex]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7
-[DotNetQRRegex]: https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
 
 {{< notice type="warning" >}}
 I'm not a regex guru.
@@ -645,11 +638,8 @@ I'm not a regex guru.
 For several years now, I have crafted my regex using the following online validator tools.
 There are others, these are just the ones I find familiar and easy to use.
 
-* [regex101.com][regex101]
-* [regexr.com][regexr]
-
-[regex101]: https://regex101.com/
-[regexr]: https://regexr.com/
+* [regex101.com](https://regex101.com/)
+* [regexr.com](https://regexr.com/)
 
 ## Summary
 

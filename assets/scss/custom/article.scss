@@ -1,19 +1,19 @@
 .article-header {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
  
-    &.has-image {  // New class for when image exists
+    &.has-image {
         .article-details {
-            padding-right: 160px;  // Only add padding when image exists
+            padding-right: 80px;  // Reduced from 160px
         }
     }
- 
+
     .article-image {
         position: absolute;
         top: 0;
         right: 0;
-        width: 150px;
-        height: 100%;
+        width: 160px;
+        height: 80%;
         
         img {
             width: 80%;

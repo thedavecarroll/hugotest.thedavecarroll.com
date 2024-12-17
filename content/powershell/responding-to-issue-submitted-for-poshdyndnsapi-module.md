@@ -191,7 +191,7 @@ Alas, I did not.
 
 *If only there was some way to test my code changes before pushing to GitHub or PSGallery.*
 
-I have been lazy with my modules and have not included adequate [Pester][Pester] tests.
+I have been lazy with my modules and have not included adequate [Pester](https://pester.dev) tests.
 For much of my PowerShell history, I have done the same hacky thing that most systems administrators have done — write a function, manually test a function.
 Just recently I've begun using Visual Studio Code's debugging, so at least there's that.
 
@@ -232,8 +232,6 @@ You can *unlist* a script, similarly.
 
 With the new *(working)* version in GitHub and PowerShell Gallery, I was able to breathe a sigh of relief.
 It was a learning experience.
-
-[Pester]: https://pester.dev/
 
 ## Summary
 

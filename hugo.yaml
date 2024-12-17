@@ -56,7 +56,7 @@ params:
 
     sidebar:
         #emoji: 🍥
-        compact: true
+        compact: false
         subtitle: Articles on PowerShell, general IT, and retrocomputing
         avatar:
             enabled: true

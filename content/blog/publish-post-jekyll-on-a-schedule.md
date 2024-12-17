@@ -17,9 +17,9 @@ The contributors were asked to publish one to two blog posts on a specific topic
 A specific time, for my static blog, meant that I needed to push my blog post at or near that time manually.
 I had no mechanism to schedule a post.
 
-Back then, I did a little searching and found a [GitHub Action][about-github-actions] that seemed like it would do the trick, but I didn't spend the time to work on it.
+Back then, I did a little searching and found a [GitHub Action](https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions) that seemed like it would do the trick, but I didn't spend the time to work on it.
 
-In this post, I will show you how easy it is to configure a workflow using [Jekyll Publish Drafts][jekyll-publish-drafts] to schedule the publishing of a post for a GitHub Pages hosted Jekyll-based site.
+In this post, I will show you how easy it is to configure a workflow using [Jekyll Publish Drafts](https://github.com/marketplace/actions/jekyll-publish-drafts) to schedule the publishing of a post for a GitHub Pages hosted Jekyll-based site.
 
 ## Blog Technical Stack
 
@@ -38,7 +38,7 @@ The `Jekyll Publish Drafts` GitHub Action is the best and simplest solution I fo
 Originally introduced in 2018, GitHub Actions have evolved to allow users to *build end-to-end continuous integration (CI) and continuous deployment (CD) capabilities directly in your repository*.
 GitHub added support for self-hosted runners in November 2019.
 
-They provide a [Marketplace][marketplace-actions] with Applications and Actions.
+They provide a [Marketplace](https://github.com/marketplace?type=actions) with Applications and Actions.
 Currently it has more than 3500 Actions.
 Some actions are for those with GitHub Enterprise licensing, while others are offered on a paid basis.
 
@@ -292,9 +292,6 @@ Also, if you want want to dig into the action to see how it works, here is the [
 Updated references of master branch to main.
 {{< /update >}}
 
-[about-github-actions]: https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions
-[jekyll-publish-drafts]: https://github.com/marketplace/actions/jekyll-publish-drafts
-[marketplace-actions]: https://github.com/marketplace?type=actions
 [autopublish-jekyll-draft]: https://soywiz.com/autopublish-jekyll-drafts/
 [ga-jekyll-publish-draft]: https://github.com/soywiz/github-action-jekyll-publish-drafts
 [actions-toolkit]: https://github.com/actions/toolkit

@@ -31,4 +31,8 @@
     // Inline code colors
     --inline-code-background: #{$light-secondary-bg};
     --inline-code-color: #{$light-primary-accent};
+
+    // Update link colors
+    --accent-color: #{$light-primary-accent};        // Color for links
+    --accent-color-darker: #{$light-secondary-accent}; // Color for link hover
 }

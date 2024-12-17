@@ -74,9 +74,9 @@ reviewed to see how he built the module, handled cross-platform execution, used 
 ### Parser Class
 
 The Parser class requires two referenced variables that store output, an array of AST tokens an array of parse errors.
-Checking out the documentation for the [Token class][tokenclass], we see that the class includes a
+Checking out the documentation for the [Token class](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.language.token?view=powershellsdk-7.0.0), we see that the class includes a
 TokenFlags property.
-This eventually leads us to the [TokenFlags][tokenflags] enum documentation where we can see that one
+This eventually leads us to the [TokenFlags](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.language.tokenflags?view=powershellsdk-7.0.0) enum documentation where we can see that one
 of the fields in the bitwise enum is **CommandName**.
 Using that we can find all commands, including cmdlets, aliases, and executables.
 
@@ -84,9 +84,6 @@ Using that we can find all commands, including cmdlets, aliases, and executables
 $Tokens = $ParseErrors = $null
 $null = [System.Management.Automation.Language.Parser]::ParseFile($File.FullName,[ref]$Tokens,[ref]$ParseErrors)
 ```
-
-[tokenclass]: https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.language.token?view=powershellsdk-7.0.0
-[tokenflags]: https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.language.tokenflags?view=powershellsdk-7.0.0
 
 ### CommandName TokenFlag
 

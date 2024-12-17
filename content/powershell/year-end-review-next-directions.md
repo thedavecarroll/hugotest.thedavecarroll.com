@@ -20,7 +20,7 @@ New-TimeSpan -Start '8/17/2020' -End (Get-Date).Date.ToShortDateString() | Selec
 154
 ```
 
-It's been 154 days since I've published the article on [responding to a GitHub issue for my PoShDynDnsApi module][IssueResponse].
+It's been 154 days since I've published the article on [responding to a GitHub issue for my PoShDynDnsApi module]({{< relref "archived-links.md" >}}).
 
 I wanted to go over a few of the things that have been taking my time.
 
@@ -30,15 +30,13 @@ I wanted to go over a few of the things that have been taking my time.
 >
 > There are, however, a few topics that might interest PowerShell community members in the [PowerShell](#powershell) section.
 
-[IssueResponse]: https://bit.ly/3ayBbFt
-
 ## The Infamous Year 2020 in Review
 
 For me, the year 2020 was exceptional for a multitude of reasons and only a very few that were good ones.
 
 ### The Bad
 
-January 7th, Neil Peart of [Rush][Rush], my favorite band, passed away from brain cancer.
+January 7th, Neil Peart of [Rush](https://www.rush.com/), my favorite band, passed away from brain cancer.
 The world was notified a few days later, as his family and close friends wanted private time to start their grieving.
 Though not as much as the passing of Leonard Nimoy, Peart's passing hurt me considerably as his music and his lyrics has been a integral part of my life since high school.
 
@@ -79,8 +77,6 @@ Regardless of what my body does, I need my mind to function until it's my time t
 No recount (pun intended) of the year 2020 can be complete without at least a brief mention of the political and cultural strife in the United States.
 Regardless of where you fall on the political spectrum, last year was, at best, tumultuous.
 
-[Rush]: https://www.rush.com/
-
 ### The Good
 
 Despite the shitshow that was the year 2020, I did have a few *very* good things that happened.
@@ -94,12 +90,12 @@ I focused my mind on computing nostalgia.
 
 I found several YouTube channels on retro computing that took me back in time.
 
-- [Adrian's Digital Basement][Adrian]
-- [The 8-Bit Guy][8bitguy]
-- [8-Bit Show and Tell][8bitshow]
-- [LGR][LGR]
-- [Jan Beta][JanBeta]
-- [RMC - The Cave][RMC]
+- [Adrian's Digital Basement](https://www.youtube.com/@adriansdigitalbasement)
+- [The 8-Bit Guy](https://www.youtube.com/@The8BitGuy)
+- [8-Bit Show and Tell](https://www.youtube.com/@8_Bit)
+- [LGR](https://www.youtube.com/@LGR)
+- [Jan Beta](https://www.youtube.com/@JanBeta)
+- [RMC - The Cave](https://www.youtube.com/@RMCRetro)
 
 As I watched them, my realized that I wanted to relive my early computing history.
 Along with an *Atari 2600*, given to me by a close friend, and my brother's Pentium 166 system had started my collecting journey.
@@ -131,13 +127,6 @@ I did solder a small clock/timer kit, but it doesn't seem to work.
 I have another identical kit that I will assemble soon.
 The idea behind building the kit is to get experience with soldering and troubleshooting simple circuits so I can put those skills to use repairing the old systems.
 
-[Adrian]: https://www.youtube.com/channel/UCE5dIscvDxrb7CD5uiJJOiw
-[8bitguy]: https://www.youtube.com/channel/UC8uT9cgJorJPWu7ITLGo9Ww
-[8bitshow]: https://www.youtube.com/channel/UC3gRBswFkuteshdwMZAQafQ
-[LGR]: https://www.youtube.com/channel/UCLx053rWZxCiYWsBETgdKrQ
-[RMC]: https://www.youtube.com/channel/UCLEoyoOKZK0idGqSc6Pi23w
-[JanBeta]: https://www.youtube.com/channel/UCftUpOO4h9EgH0eDOZtjzcA
-
 #### Career Shift and New Job
 
 When I moved back to Tennessee from California in 2016, I accepted the first systems engineer position offered just to get the income flowing.
@@ -145,7 +134,7 @@ I made a few good friends, one of which has become a best friend, while working 
 Despite the culture, I was able to learn Azure and created a Windows PowerShell workflow to merge accounts from two domains and migrate mailboxes to the cloud.
 
 The growing disgust of the company eventually inspired me to start looking for another job and I soon realized that DevOps skills were in high demand.
-As [Don Jones][DonJones] heavily suggests, I took charge of my career and began my journey of learning more about DevOps.
+As [Don Jones](https://donjones.com/soft-skills/) heavily suggests, I took charge of my career and began my journey of learning more about DevOps.
 
 My next position seemed to be the perfect for me, joining a skill that I had with a skill I wanted: Senior Active Directory Administrator & DevOps.
 However, by the time the paperwork was complete, the *DevOps* part was dropped.
@@ -183,8 +172,6 @@ I feel welcomed by the team and I feel like a part of the team, despite working 
 To the person responsible for sharing my resume with his manager, I thank you.
 To his manager who is now my manager, I'm so very thankful that you, and the others involved in offering me a position, wanted me on your team.
 
-[DonJones]: https://donjones.com/soft-skills/
-
 #### PowerShell
 
 Here is a recap of my PowerShell contributions for 2020.
@@ -198,68 +185,46 @@ I was extremely flattered and wrote [two articles](https://powershell.anovelidea
 ##### PowerShell Conference Book, Volume 3
 
 I contributed the chapter, **Exploring Experimental Features in PowerShell 7**, expanding on the PS7Now article on the same topic.
-I also wrote [PSTemperature][PSTemperature], a sample binary module that demonstrates how to include experimental features.
+I also wrote [PSTemperature](https://github.com/thedavecarroll/PSTemperature), a sample binary module that demonstrates how to include experimental features.
 
-You can purchase the digital version [here][PSConfBookV3] and the physical version [here][PSConfBookV3Physical].
-Proceeds goes to the [OnRamp Scholarship][OnRamp] for the OnRamp track for the [PowerShell + DevOps Global Summit][Summit].
-
-[PSConfBookV3]: https://bit.ly/PSConfBookV3
-[PSConfBookV3Physical]: https://bit.ly/PSConfBookV3Physical
-[PSTemperature]: https://github.com/thedavecarroll/PSTemperature
-[OnRamp]: https://events.devopscollective.org/OnRamp/Scholarship/
-[Summit]:https://events.devopscollective.org/event/powershell-devops-global-summit/
+You can purchase the digital version [here](https://leanpub.com/psconfbook3) and the physical version [here](https://www.amazon.com/dp/B08MGR749H/).
+Proceeds goes to the [OnRamp Scholarship](https://events.devopscollective.org/OnRamp/Scholarship/) for the OnRamp track for the [PowerShell + DevOps Global Summit](https://events.devopscollective.org/event/powershell-devops-global-summit/).
 
 ##### BluebirdPS
 
 Last year, I began work on a PowerShell 7 module to interact with the Twitter API.
-I consulted with a few PowerShell community members and eventually settled on the name [BluebirdPS][BluebirdPSGallery].
+I consulted with a few PowerShell community members and eventually settled on the name [BluebirdPS]({{< relref "archived-links.md" >}}).
 
-If you are interested in using BluebirdPS, visit the [Getting Started: Pre-requisites][BluebirdPSPrerequisites] documentation page.
+If you are interested in using BluebirdPS, visit the _Getting Started: Pre-requisites_ documentation page.
 
 I want the module to be easy to use by the community and contain useful features/commands.
-To that end, please feel free to submit [discussion issue][BluebirdPSOpenDiscussion], [feature request][BluebirdPSFeatureRequest], or [bug report][BluebirdPSBugReport].
-
-[BluebirdPSPrerequisites]: https://bit.ly/BluebirdPSPrerequisites
-[BluebirdPSGallery]: https://bit.ly/BluebirdPS
-[BluebirdPSOpenDiscussion]: https://bit.ly/BluebirdPSOpenDiscussion
-[BluebirdPSFeatureRequest]: https://bit.ly/BluebirdPSFeatureRequest
-[BluebirdPSBugReport]: https://bit.ly/BluebirdPSBugReport
+To that end, please feel free to submit _discussion issue_, _feature request_, or _bug report_.
 
 ##### Presentations
 
 I gave two presentations last year, both on BluebirdPS.
-You can see the [slide decks][PresentationRepo] or check out the [videos][PresentationVideos].
+You can see the [slide decks](https://github.com/thedavecarroll/Presentations) or check out the [videos](https://www.youtube.com/playlist?list=PLqfC1rgeTHyuA41oype1dT5VjzZ26KFSp).
 
 I changed the order of topics and general approach after awesome feedback from the first presentation.
 Succeeding presentations should always be adjusted from feedback and your own observations.
 
-[PresentationRepo]: https://github.com/thedavecarroll/Presentations
-[PresentationVideos]: https://bit.ly/thedavecarroll-pwsh-talks
-
 ##### Advent of Code
 
-Last year was the first year that I participated in the [Advent of Code][AdventOfCode].
-Check out my [2020 solutions][2020Advent].
+Last year was the first year that I participated in the [Advent of Code](https://adventofcode.com/).
+Check out my [2020 solutions](https://github.com/thedavecarroll/AdventOfCode/tree/main/2020).
 
 Though I only completed I only 17 of the challenges, I managed to land 17th on the PowerShell leaderboard.
 
-[AdventOfCode]: https://adventofcode.com/
-[2020Advent]: https://github.com/thedavecarroll/AdventOfCode/tree/main/2020
-
 ##### Iron Scripter Challenges
 
-I accepted and solved, to some degree, last year four [IronScripter][IronScripter] Challenges, created by Jeff Hicks.
-My [IronScripterSolutions][IronScripterSolutions] repo, which woefully needs to be updated, includes links to the challenges and links to my solutions.
+I accepted and solved, to some degree, last year four [IronScripter](https://ironscripter.us/let-the-powershell-challenges-begin/) Challenges, created by Jeff Hicks.
+My [IronScripterSolutions](https://github.com/thedavecarroll/IronScripterSolutions) repo, which woefully needs to be updated, includes links to the challenges and links to my solutions.
 
-I spent considerable time on the [Process Tree challenge][ProcessTree], but ultimately didn't produce a function that I would consider good enough.
+I spent considerable time on the [Process Tree challenge](https://ironscripter.us/building-a-powershell-process-tree/), but ultimately didn't produce a function that I would consider good enough.
 It did lead me to learning about the composite design pattern.
 
 The IronScripter challenges serves to teach PowerShell concepts and techniques on how to achieve a desired outcome.
 I've written a few articles as walk-throughs for specific challenges and I think they've helped others expand their PowerShell knowledge and skills.
-
-[IronScripter]: https://ironscripter.us/let-the-powershell-challenges-begin/
-[IronScripterSolutions]: https://github.com/thedavecarroll/IronScripterSolutions
-[ProcessTree]: https://ironscripter.us/building-a-powershell-process-tree/
 
 ## 2021 Directions
 

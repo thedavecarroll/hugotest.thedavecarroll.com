@@ -9,7 +9,7 @@ categories: ["PowerShell"]
 
 ## Introduction
 
-The latest IronScripter challenge, [A PowerShell Counting Challenge][CountingChallenge], had challengers
+The latest IronScripter challenge, [A PowerShell Counting Challenge](https://ironscripter.us/a-powershell-counting-challenge/), had challengers
 learning about loops, possibly range and modulus operators, basic parameter validation, and creation of a simple custom object.
 
 This post should serve as a walk-through, or learning guide if you will, for the Iron Scripter's challenge.
@@ -86,7 +86,7 @@ PS7 > 1.1..3.7
 
 ### Method 1
 
-For the first method, I chose to loop using the `ForEach-Object` cmdlet which accepts input from the [pipeline][Pipelines].
+For the first method, I chose to loop using the `ForEach-Object` cmdlet which accepts input from the [pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7).
 
 ```powershell
 PS> 1..100 | ForEach-Object { if ($_ % 2 -eq 0 ) {$_ } } | Measure-Object -Sum
@@ -202,7 +202,7 @@ Sometimes, however, this is the simplest way to capture the output in a loop, es
 
 For my last beginner method, I wanted to do something a little harder and forego using modulus.
 
-A quick search for _sum of all even numbers between 1 and 100_ revealed a [Quora answer][QuroaAnswer] that delved into a mathematical equation.
+A quick search for _sum of all even numbers between 1 and 100_ revealed a [Quora answer](https://www.quora.com/What-is-the-sum-of-all-even-numbers-between-1-and-100) that delved into a mathematical equation.
 
 `S = n∗(n+1) / d`
 
@@ -279,8 +279,3 @@ It could help you by seeing other's code.
 Please feel free to leave a comment or suggestion.
 
 Thanks for reading.
-
-[Pipelines]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7
-[CountingChallenge]: https://ironscripter.us/a-powershell-counting-challenge/
-[QuroaAnswer]: https://www.quora.com/What-is-the-sum-of-all-even-numbers-between-1-and-100
-

@@ -74,7 +74,7 @@ My site became a dusty archive with nuggets of knowledge strewn about.
 ## Recharged and Ready
 
 Over the last couple months, I've been getting more active in the PowerShell online community, tweeting and retweeting,
-reading the [r/PowerShell subreddit][PowerShellSubreddit], and reading the [PowerShell.org Forums][PowerShellOrgForums].
+reading the [r/PowerShell subreddit](https://www.reddit.com/r/PowerShell/), and reading the [PowerShell.org Forums](https://forums.powershell.org/).
 
 In fact, it was interaction with a poster from the forums that resulted in a recharge of my energy stores.
 It proved to be just enough energy/motivation for me to tackle and overcome the technical issues with my site as evidenced by last week's article.
@@ -130,12 +130,12 @@ I'd used them [before]({{< relref "blog/publish-post-jekyll-on-a-schedule.md" >}
 When I realized that GitHub had published a set of actions for Jekyll, I knew it was the right decision (for me, at least).
 GitHub provides the following actions:
 
-+ Configure GitHub Pages - [configure-pages][configure-pages]
-+ Build Jekyll for GitHub Pages - [jekyll-build-pages][jekyll-build-pages]
-+ Upload GitHub Pages artifact - [upload-pages-artifact][upload-pages-artifact]
-+ Deploy GitHub Pages site - [deploy-pages][deploy-pages]
++ Configure GitHub Pages - [configure-pages](https://github.com/marketplace/actions/configure-github-pages)
++ Build Jekyll for GitHub Pages - [jekyll-build-pages](https://github.com/marketplace/actions/build-jekyll-for-github-pages)
++ Upload GitHub Pages artifact - [upload-pages-artifact](https://github.com/marketplace/actions/upload-github-pages-artifact)
++ Deploy GitHub Pages site - [deploy-pages](https://github.com/marketplace/actions/deploy-github-pages-site)
 
-They also provide several starter workflows and one, [jekyll-gh-pages.yml][jekyll-gh-pages],
+They also provide several starter workflows and one, [jekyll-gh-pages.yml](https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml),
 gave me enough to create the workflow below.
 
 #### Workflow
@@ -192,20 +192,18 @@ I added that to my site's ever-growing to-do list.
 ## Site Comments
 
 Most sites offer a way for readers to make comments allowing them to engage and be part of the conversation.
-When I rolled out my site originally, I used the [Staticman][Staticman] Node.js application and their public API.
+When I rolled out my site originally, I used the [Staticman](https://staticman.net/) Node.js application and their public API.
 Because the API is hosted on Heroku's free tier, they reached capacity quite often.
 
 In four years, my site has had a whopping 13 comments for 10 posts (about a third of my total posts).
 That's probably the reason I hadn't encountered any public API throttling or over capacity.
-
-[Staticman]: https://staticman.net/
 
 ### Staticman on Heroku
 
 On Staticman's GitHub repo, there is a nice `Deploy to Heroku` button.
 Spoiler, I (eventually) clicked the button.
 
-Since I didn't have a [Heroku][Heroku] account, I had to create one prior to deploying.
+Since I didn't have a [Heroku](https://www.heroku.com/) account, I had to create one prior to deploying.
 The process seemed really simple and within a short time, I had my own copy of the Staticman API running.
 
 I had to iron out one major issue before I could submit a comment successfully.
@@ -241,24 +239,21 @@ It was that very openness that made the comments form an easy target for spammer
 Dejected, I decided my focus needed to change from Staticman and reCAPTCHA.
 
 {{< notice type="note" >}}
-In case you are interested, you can look at the [the bad pull requests][BadPullRequests] in my repo.
+In case you are interested, you can look at the [the bad pull requests](https://github.com/thedavecarroll/thedavecarroll.com/pulls?q=is%3Apr+is%3Aclosed+author%3Athedavecarroll-bot) in my repo.
 I deleted the feature branches that each comment created.\
 \
 ![Staticman Spam Pull Requests](/images/refresh-blog-tech-stack/staticman-comment-abuse.png "Staticman Spam Pull Requests")
 {{< /notice >}}
 
-[Heroku]: https://www.heroku.com/
-[BadPullRequests]: https://github.com/thedavecarroll/thedavecarroll.com/pulls?q=is%3Apr+is%3Aclosed+author%3Athedavecarroll-bot
-
 ### Giscus GitHub App
 
-I considered abandoning comments altogether until an internet search deposited me at [Andrew Lock][AndrewLock]'s article [Considering replacing Disqus with Giscus][AndrewLockGiscus].
-The idea of using [Disqus][Disqus] was another rabbit hole, albeit shallower, that I decided to abandon.
+I considered abandoning comments altogether until an internet search deposited me at [Andrew Lock][AndrewLock]'s article [Considering replacing Disqus with Giscus](https://andrewlock.net/considering-replacing-disqus-with-giscus/).
+The idea of using [Disqus](https://disqus.com/) was another rabbit hole, albeit shallower, that I decided to abandon.
 That detour cost me less than an hour.
 
-I read the article and the [giscus][GiscusApp] home page with instructions.
+I read the article and the [giscus](https://giscus.app/) home page with instructions.
 The GitHub setup seemed easy so the next possible issue was if giscus support was built-in to my theme.
-I was glad to see that the [Minimal Mistakes][MinimalMistakes] theme does support giscus as a comment provider.
+I was glad to see that the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments) theme does support giscus as a comment provider.
 
 I made the updates, waited the minute or so for the workflow to build and deploy the site, and then checked my work.
 And there it was, under the **Leave A Comment** section.
@@ -272,7 +267,7 @@ After I authorized the app, I was able to react and comment on the article.
 
 ![Leave a Comment](/images/refresh-blog-tech-stack/giscus-comments.png "Leave a Comment")
 
-You can see the comment in [GitHub Discussions][GitHubDiscussionsComment].
+You can see the comment in [GitHub Discussions](https://github.com/thedavecarroll/thedavecarroll.com/discussions/10).
 
 {{< notice type="note" >}}
 As most of readers of my articles are likely IT professionals, there is a good chance that they already have a GitHub account.
@@ -280,11 +275,6 @@ If not, wouldn't it be great to be the catalyst for someone to create an account
 {{< /notice >}}
 
 [AndrewLock]: https://twitter.com/andrewlocknet
-[AndrewLockGiscus]: https://andrewlock.net/considering-replacing-disqus-with-giscus/
-[Disqus]: https://disqus.com/
-[GiscusApp]: https://giscus.app/
-[MinimalMistakes]: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#comments
-[GitHubDiscussionsComment]: https://github.com/thedavecarroll/thedavecarroll.com/discussions/10
 
 #### Configuration
 
@@ -298,24 +288,22 @@ Instead of using the suggested GitHub Discussion category of Announcements, I cr
 
 ![Discussion Category for Giscus](/images/refresh-blog-tech-stack/discussion-category-for-giscus.png "Discussion Category for Giscus")
 
-While backtracking my steps for my recall accuracy check, I realized that I overlooked giscus' [advanced usage guide][GiscusAdvancedUsage].
+While backtracking my steps for my recall accuracy check, I realized that I overlooked giscus' [advanced usage guide](https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md).
 It provides instructions on how to restrict the domains that can load giscus, as well as a few other methods of customization.
 I've added the required `giscus.json` to my repo's root.
 
 {{< gist id="3e4a46d18653387cfa4d71c46a201f2d" file="giscus.json" >}}
 
-[GiscusAdvancedUsage]: https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md
-
 ## Favicon
 
 This blog originally had an image of my PowerShell tattoo as the logo and the favicon.
-A few months ago, I commissioned a new avatar from the [ReverentGeek][ReverentGeek].
+A few months ago, I commissioned a new avatar from the [ReverentGeek](https://reverentgeek.com/).
 I've been using it on all my *thedavecarroll* branded social media since.
 
 As I worked with refreshing the blog, it was a simple matter to update the theme's author avatar.
 The old favicon, however, kept staring at me.
 *How did I generate that originally?*
-A quick search brought me to a familiar site, [realfavicongenerator.net][RealFaviconGenerator].
+A quick search brought me to a familiar site, [realfavicongenerator.net](https://realfavicongenerator.net/).
 
 The process is fairly simply, select your image and on the next page, make setting changes as needed for each type of favicon.
 *You thought there was only one?*
@@ -345,9 +333,6 @@ My theme has an `_includes/head/custom.html` that was designed for use by the si
 It makes adding custom elements to the `<head>` section easy.
 
 The same site also provides a way to test the favicons once you have added them to your site.
-
-[ReverentGeek]: https://reverentgeek.com/
-[RealFaviconGenerator]: https://realfavicongenerator.net/
 
 ## Google Analytics
 
@@ -383,13 +368,11 @@ Assuming you already have a Google Analytics account and an existing UA property
 
 ![GA4 Setup Assistant](/images/refresh-blog-tech-stack/ga4-setup-assistant.png "GA4 Setup Assistant")
 
-This [support document][GA4SupportDoc] walks you through adding a GA4 property to a site that already has UA.
+This [support document](https://support.google.com/analytics/answer/9744165) walks you through adding a GA4 property to a site that already has UA.
 Again, I was lucky that my theme already supported GA4.
 All I had to do was update the provider and tracking id.
 
 {{< gist id="3e4a46d18653387cfa4d71c46a201f2d" file="config-for-ga4.yml" >}}
-
-[GA4SupportDoc]: https://support.google.com/analytics/answer/9744165
 
 ## Next Steps
 
@@ -402,33 +385,28 @@ I want to create the following workflows.
 + Publish Blog Drafts
   + Even though I already have a workflow for this, it doesn't work as smooth as I would like (the filename had an incorrect date prefix). And I would like to use PowerShell as the scripting language.\
   \
-  *Note: I've already made some significant progress on this. Checkout out the [Rename Draft Articles][RenameDraftArticles] workflow in my site's repo.*
+  *Note: I've already made some significant progress on this. Checkout out the [Rename Draft Articles](https://github.com/thedavecarroll/thedavecarroll.com/actions/workflows/rename-draft-articles.yml) workflow in my site's repo.*
 + Announce New Article
-  + I want to use [BluebirdPS][BluebirdPS] to Tweet new articles after they are published.
+  + I want to use [BluebirdPS](https://www.powershellgallery.com/packages/BluebirdPS) to Tweet new articles after they are published.
 + Announce Archive Article
   + I want to Tweet an older article once or twice a month to cover any times when I'm in *maintenance mode* again.
 + Ideally, I would like to validate the links, especially internal, before deploying the site.
 + The standard publish workflow should include a sitemap or new article ping to Google and IndexNow.
 
 {{< notice type="tip" >}}
-When I reached out to PowerShell Twitter, [Josh Rickard][JoshRickard] provided me a link to his [revive-social-media repo][ReviveSocialMedia] which can submit a post to LinkedIn and publish a Tweet.
+When I reached out to PowerShell Twitter, [Josh Rickard][JoshRickard] provided me a link to his [revive-social-media repo](https://github.com/MSAdministrator/revive-social-media) which can submit a post to LinkedIn and publish a Tweet.
 Whether I use that or not, I'm sure it will be helpful for LinkedIn postings.
 {{< /notice >}}
 
-[RenameDraftArticles]: https://github.com/thedavecarroll/thedavecarroll.com/actions/workflows/rename-draft-articles.yml
-[BluebirdPS]: https://www.powershellgallery.com/packages/BluebirdPS
 [JoshRickard]: https://twitter.com/MSAdministrator
-[ReviveSocialMedia]: https://github.com/MSAdministrator/revive-social-media
 
 #### Related Articles
 
 I've noticed a high bounce rate for most visitors, meaning that they usually just read the article that brought them to the site then leave.
 That's their prerogative, but perhaps there are other related articles that could interest them.
 Jekyll supports related posts, however, they are not random and are the last three or four articles which may not be on the same topic.
-I found [this article][RelatedPosts] that shows how to implement actual related posts based on tags or categories.
+I found [this article](https://blog.webjeda.com/jekyll-related-posts/) that shows how to implement actual related posts based on tags or categories.
 This seems like a low-hanging fruit that I will tackle soon.
-
-[RelatedPosts]: https://blog.webjeda.com/jekyll-related-posts/
 
 ### Theme Changes
 
@@ -454,12 +432,3 @@ If you have any questions or comments, please leave them below (in the new giscu
 And if you publish a blog using Jekyll, I'd like to hear how you have (or would) remediate any of the issues above.
 
 Thank you, again.
-
-[Jekyll]: https://jekyllrb.com/
-[PowerShellSubreddit]: https://www.reddit.com/r/PowerShell/
-[PowerShellOrgForums]: https://forums.powershell.org/
-[configure-pages]: https://github.com/marketplace/actions/configure-github-pages
-[jekyll-build-pages]: https://github.com/marketplace/actions/build-jekyll-for-github-pages
-[upload-pages-artifact]: https://github.com/marketplace/actions/upload-github-pages-artifact
-[deploy-pages]: https://github.com/marketplace/actions/deploy-github-pages-site
-[jekyll-gh-pages]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll-gh-pages.yml

@@ -10,12 +10,17 @@ categories: ["PowerShell"]
 ## Introduction
 
 About a week ago, I was scrolling through Reddit and came across a post in **r/sysadmin**,
-[Get list of aliases in Gsuite/Gmail][1].
+[Get list of aliases in Gsuite/Gmail](https://www.reddit.com/r/sysadmin/comments/aujdao/get_list_of_aliases_in_gsuitegmail/).
 
-I took a few minutes to install and configure [PSGSuite][2], a module for interacting with G Suite
+I took a few minutes to install and configure [PSGSuite](https://github.com/scrthq/PSGSuite), a module for interacting with G Suite
 (Google Apps) API that I heard about sometime last year. In short order, I was able to provide a response to the post.
 
-This module allows you to work with GSuite users, groups, sheets, and more. See the [wiki][3] for details.
+{{< notice type="important" >}}
+I am not affiliated with `PSGSuite` project, other than being a very new, casual user of the module. Please visit the
+[GitHub repo](https://github.com/scrthq/PSGSuite) or [wiki](https://github.com/scrthq/PSGSuite/wiki/) for help with commands or to raise an issue.
+{{< /notice >}}
+
+This module allows you to work with GSuite users, groups, sheets, and more. See the [wiki](https://github.com/scrthq/PSGSuite/wiki/) for details.
 
 This post will take you through creating organizational units, users, and groups, and assigning users to groups, and
 listing users with email aliases.
@@ -26,11 +31,6 @@ For fun, I've created a custom schema and attribute, `EmployeeType`, that will h
 I manually created a `/test` organizational unit and blocked automatic assignment of a license since I'm using my personal G Suite account.
 I don't want any surprises at the end of the month.
 {{< /notice >}}
-
-### Disclosure
-
-I am not affiliated with `PSGSuite` project, other than being a very new, casual user of the module. Please visit the
-[GitHub repo][2] or [wiki][3] for help with commands or to raise an issue.
 
 ## Basic User Process
 
@@ -46,13 +46,13 @@ This list covers the basic workflow that we will be following.
 
 ### PSGSuite Module
 
-I followed the project's wiki [Initial Setup][4] page and the configuration went smoothly and quickly.
+I followed the project's wiki [Initial Setup](https://github.com/scrthq/PSGSuite/wiki/Initial-Setup) page and the configuration went smoothly and quickly.
 
 ### Custom Attribute in G Suite
 
 Here are the basic steps I used to create the custom attribute in G Suite.
 
-1. Login to [https://admin.google.com][5].
+1. Login to [https://admin.google.com](https://admin.google.com).
 2. Go to Users.
 3. Click on **Manage Custom Attributes** icon, next to Download Users.
 4. Click on **ADD CUSTOM ATTRIBUTE**.
@@ -85,13 +85,13 @@ provide the required data for all steps of the process.
 
 #### Sheet: Groups
 
-|Name|Email|Description|OrgUnitPath
+|Name|Email|Description|OrgUnitPath|
 |-|-|-|-|
 |Business|business@anovelidea.org|Business Department|/test/business|
 |Academics|academics@anovelidea.org|Academics Department|/test/academics|
 
 {{< notice type="tip" >}}
-I used [Doug Finke's NameIT][6] module to produce random names.
+I used [Doug Finke's NameIT][https://github.com/dfinke/NameIT] module to produce random names.
 {{< /notice >}}
 
 ## User Process
@@ -298,7 +298,7 @@ And here is what the end result will look like.
 ![AccountCreationLog](/images/gsuite-account-creation-log.png)
 
 {{< notice type="tip" >}}
-Doug Finke also has an outstanding module, [ImportExcel][7], that will help you get your data
+Doug Finke also has an outstanding module, [ImportExcel](https://github.com/dfinke/ImportExcel), that will help you get your data
 into an Excel spreadsheet.
 {{< /notice >}}
 
@@ -312,11 +312,3 @@ I hope these examples will help you understand how to start using the `PSGSuite`
 If this blog post has helped you, please leave a comment below.
 
 PowerShell to the People!
-
-[1]: https://www.reddit.com/r/sysadmin/comments/aujdao/get_list_of_aliases_in_gsuitegmail/
-[2]: https://github.com/scrthq/PSGSuite
-[3]: https://github.com/scrthq/PSGSuite/wiki/
-[4]: https://github.com/scrthq/PSGSuite/wiki/Initial-Setup
-[5]: https://admin.google.com
-[6]: https://github.com/dfinke/NameIT
-[7]: https://github.com/dfinke/ImportExcel

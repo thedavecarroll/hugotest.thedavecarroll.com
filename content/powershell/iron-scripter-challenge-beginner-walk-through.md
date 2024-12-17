@@ -10,7 +10,7 @@ categories: ["PowerShell"]
 ## Introduction
 
 Iron Scripter grew out of the scripting games at PowerShell Summit and the quote below comes from the introductory post
-on the [Iron Scripter site][1].
+on the [Iron Scripter site](https://ironscripter.us).
 
 >The Chairman has decided that it is in the best interests of his Iron Scripters, and those that wish to attain that
 >valued designation,  that training continue year-round. To that end, he has commissioned a series of PowerShell
@@ -51,7 +51,7 @@ In this post, you will learn about the following PowerShell concepts.
 
 ## PowerShell Beginners Have to Start Somewhere
 
-Here is the [link][2] to original "PowerShell Beginners Have to Start Somewhere" challenge.
+Here is the original [PowerShell Beginners Have to Start Somewhere](https://ironscripter.us/powershell-beginners-have-to-start-somewhere/) challenge.
 
 ## Challenge Directions
 
@@ -72,7 +72,7 @@ PowerShell Core | Windows, Linux, MacOS | 6.x | Core | .Net Core 2.0
 PowerShell | Windows, Linux, MacOS | 7.x | Core | .Net Core 3.0
 
 For more information on PowerShell editions, visit Microsoft Docs entry for
-[About PowerShell Editions][3].
+[About PowerShell Editions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_editions?view=powershell-6&viewFallbackFrom=powershell-5.1).
 
 {{< notice type="tip" >}}
 For this challenge, let's assume Windows PowerShell edition will be used.
@@ -482,7 +482,7 @@ On the challenge's page, three Iron Scripters submitted their own. We've seen on
 
 #### Alternate Solution 2
 
-[GitHub Repo Link][4]
+[GitHub Repo Link](https://github.com/Dalcron/IronScripter/blob/master/JUL_15_2019_Challenge.ps1)
 
 ## Summary
 
@@ -499,8 +499,3 @@ learned about the PowerShell pipeline which is one of the scripting languages gr
 I hope you’ve found this interesting or informative. If you have any comments or questions, please post them below.
 
 Thanks for reading and good luck on the Iron Scripter challenges!
-
-[1]: https://ironscripter.us
-[2]: https://ironscripter.us/powershell-beginners-have-to-start-somewhere/
-[3]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_editions?view=powershell-6&viewFallbackFrom=powershell-5.1
-[4]: https://github.com/Dalcron/IronScripter/blob/master/JUL_15_2019_Challenge.ps1

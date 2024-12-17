@@ -37,4 +37,7 @@
     --inline-code-background: #{$dark-secondary-bg};
     --inline-code-color: #{$dark-primary-accent};
 
+    // Update link colors
+    --accent-color: #{$dark-primary-accent};        // Color for links
+    --accent-color-darker: #{$dark-secondary-accent}; // Color for link hover
 }

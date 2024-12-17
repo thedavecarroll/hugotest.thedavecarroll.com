@@ -239,9 +239,7 @@ These are basically hidden methods, which you probably noticed when you used `Ge
 The member names begin with `get_` and `set_` with the latter having a `void` output, meaning that no output will be generated.
 
 Hopefully, that should be enough of a primer to continue with writing the solution for the challenge.
-However, if you are unsure or just want to learn more, check out the [about_Classes][aboutClasses] conceptual help at Microsoft Docs.
-
-[aboutClasses]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes
+However, if you are unsure or just want to learn more, check out the [about_Classes](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes) conceptual help at Microsoft Docs.
 
 ## My Solution
 
@@ -259,7 +257,7 @@ This may change later, but at least it's a start.
 #Requires -Version 5.1
 ```
 
-Visit the Microsoft Docs to learn more about the [#Requires][Requires] statement.
+Visit the Microsoft Docs to learn more about the [#Requires](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_requires?view=powershell-7.1) statement.
 It can require much more than just a specific PowerShell version.
 
 If we have code that is specific to given edition, we would need to detect it and branch code blocks based on it.
@@ -273,8 +271,6 @@ if ($PSEdition -eq 'Core') {
     Set-Alias -Name 'Invoke-DynDnsRequest' -Value 'Invoke-DynDnsRequestDesktop'
 }
 ```
-
-[Requires]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_requires?view=powershell-7.1
 
 ### Parameters
 
@@ -303,9 +299,7 @@ param(
 ```
 
 The `ValueFromPipeline` is just one parameter attribute.
-Read about it and more in the online help page [About Functions Advanced Parameters][ValueFromPipeline].
-
-[ValueFromPipeline]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-7.1#valuefrompipeline-argument
+Read about it and more in the online help page [About Functions Advanced Parameters](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-7.1#valuefrompipeline-argument).
 
 ### A Partial Solution
 
@@ -319,7 +313,7 @@ Instead of adding more and more to this article, I want to stop here and reveal 
 I originally used `Get-Member` to pull out properties, and was intending on using it for methods.
 
 As I grew impatient with myself and finishing this article, I decided to look at a few of the published solutions,
-namely those of [Jeff Hicks][JeffHicks] and [Doug Finke][DougFinke].
+namely those of [Jeff Hicks](https://jdhitsolutions.com/blog/powershell/8059/solving-the-powershell-conversion-challenge/) and [Doug Finke](https://github.com/dfinke/IronScripterNewClass).
 
 That's when I realized that by using `Get-Member` I was losing a great deal of power and ease in the PowerShell object structure.
 There was a member type of `MemberSet`.
@@ -363,10 +357,6 @@ IsInstance           : False
 My original solution used `TypeName.Split('.')[-1]` to get the last part of the property type.
 By using the `psobject.properties`, I can easily reference `TypeNameOfValue`.
 
-[JeffHicks]: https://jdhitsolutions.com/blog/powershell/8059/solving-the-powershell-conversion-challenge/
-[DougFinke]: https://github.com/dfinke/IronScripterNewClass
-[PSObject]: https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.psobject?view=powershellsdk-7.0.0
-
 #### Building the Class Definition
 
 I'm a big fan of using the `System.Text.StringBuilder` class to build complex string output.
@@ -375,7 +365,7 @@ The `AppendLine` method can easily do this.
 We just have to wrap the text and input that we want to append as a full line in parentheses.
 To output the full text from the `StringBuilder` object, we simply call the `ToString()` method.
 
-The [format operator][f_operator],`-f`, exposes the composite formatter to PowerShell commands.
+The [format operator](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.1#format-operator--f),`-f`, exposes the composite formatter to PowerShell commands.
 Basically, it allows you to specify fixed text with one or more placeholders which are replaced by one or more strings usually derived from objects.
 
 Here is how I start building the string for the class definition.
@@ -386,8 +376,6 @@ $ClassDefinition = [StringBuilder]::new()
 [void]$ClassDefinition.AppendLine('')
 [void]$ClassDefinition.AppendLine(('class {0}' -f $BaseClassName))
 ```
-
-[f_operator]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.1#format-operator--f
 
 ### Part 1 Solution
 
@@ -460,7 +448,7 @@ We reviewed how to restrict the code to a specific version of PowerShell or high
 
 Lastly, we learned how to use the `StringBuilder` class and the `-f` operator to build our class definition.
 
-I will continue to work on this as I have a need for this very thing for my Twitter API module, [BluebirdPS][BluebirdPS].
+I will continue to work on this as I have a need for this very thing for my Twitter API module, [BluebirdPS](https://www.powershellgallery.com/packages/BluebirdPS/0.8.3).
 I need an easy way to create several classes based on the `PSCustomObject`s that are returned from the API.
 This tool will definitely help with that.
 
@@ -468,5 +456,3 @@ I hope you’ve found this interesting or informative.
 If you have any comments or questions, please post them below.
 
 Thanks for reading and good luck on the Iron Scripter challenges!
-
-[BluebirdPS]: https://bit.ly/BluebirdPS

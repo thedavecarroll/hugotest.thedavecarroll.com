@@ -147,7 +147,7 @@ In 5.1, if you attempted to convert a greater depth than 101, you would get a `C
 In **PowerShell 7**, `Get-Help -Name ConvertFrom-Json -Full` reveals that `-Depth` parameter accepts type `[Int32]` and has a default value of _1024_.
 This is already a great improvement over the older cmdlet.
 
-A discussion in issue [#3182][3182], which continued into pull request [#8199][8199], focused on increasing the default value.
+A discussion in issue [#3182](https://github.com/PowerShell/PowerShell/issues/3182), which continued into pull request [#8199](https://github.com/PowerShell/PowerShell/pull/8199), focused on increasing the default value.
 The decision was to add the parameter to allow the user to exceed the default depth, up to `[int]::MaxValue`.
 
 Now let's see it in action.
@@ -183,14 +183,11 @@ Here is an example of doubling the default maximum depth.
 $PSDefaultParameterValues=@{"ConvertFrom-Json:Depth"=2048}
 ```
 
-[3182]: https://github.com/PowerShell/PowerShell/issues/3182
-[8199]: https://github.com/PowerShell/PowerShell/pull/8199
-
 ### -NoEnumerate
 
 The last parameter for `ConvertFrom-Json` we are going to examine is `-NoEnumerate`.
 
-From the [Microsoft documentation][convertfromjsondocs]:
+From the [Microsoft documentation](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/convertfrom-json?view=powershell-7):
 
 >Specifies that output is not enumerated.
 >
@@ -232,8 +229,6 @@ PS> ('[1,2]' | ConvertFrom-Json -NoEnumerate | Measure-Object).Count
 Incidentally, I believe the issue referenced above was the most discussed for the `ConvertFrom-Json` cmdlet.
 
 *Your voice matters!*
-
-[convertfromjsondocs]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/convertfrom-json?view=powershell-7
 
 ## ConvertTo-Json
 
@@ -297,7 +292,7 @@ PS> [CarTypes]::SUV,[CarTypes]::Compact | ConvertTo-Json -EnumsAsStrings
 
 ### -AsArray
 
-The `-AsArray` switch, suggested in issue [#6327][6327], instructs the cmdlet to wrap the output object in array brackets.
+The `-AsArray` switch, suggested in issue [#6327](https://github.com/PowerShell/PowerShell/issues/6327), instructs the cmdlet to wrap the output object in array brackets.
 This guarantees that the pipeline input can be treated as an array, whether it's a single item or not.
 
 ```powershell
@@ -310,8 +305,6 @@ PS> "one" | ConvertTo-Json -AsArray
   "one"
 ]
 ```
-
-[6327]: https://github.com/PowerShell/PowerShell/issues/6327
 
 ### -EscapeHandling
 
@@ -356,7 +349,7 @@ Before we discuss the `Test-Json` cmdlet, let's take a short detour to gain a be
 
 For some of you, this will be the first time that you're hearing about JSON Schema.
 
-In fact, I had worked with JSON for a while before realizing, just last year, that there is an [IETF JSON Schema draft][jsonschemadraft].
+In fact, I had worked with JSON for a while before realizing, just last year, that there is an [IETF JSON Schema draft](http://json-schema.org/specification.html).
 This draft serves to define the structure of a given JSON object type.
 
 Prior to this, the contents of a JSON object were at the discretion of the developer or scripter.
@@ -411,8 +404,6 @@ $personSchema = @'
 ```
 
 This schema will ensure the team will use consistent property names and data types for each property. *Actually, there is an error I introduced purposefully that we will discover shortly.*
-
-[jsonschemadraft]: http://json-schema.org/specification.html
 
 ### Validate JSON Basic Syntax with Test-Json
 
@@ -518,10 +509,8 @@ Using JSON Schema and the `Test-Json` cmdlet would help your team with documenta
 ## Community Input
 
 If you're interested in seeing how much the PowerShell community has shaped the present (and future) of PowerShell,
-check out the [PowerShell GitHub BI Community Dashboard][PSGitHubBI] page with with
+check out the [PowerShell GitHub BI Community Dashboard](https://msit.powerbi.com/view?r=eyJrIjoiYTYyN2U3ODgtMjBlMi00MGM1LWI0ZjctMmQ3MzE2ZDNkMzIyIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&pageName=ReportSection3&pageName=ReportSectionbef8a22c3bc5ed20de40) page with with
 *Pull Requests and Issues By Community and Microsoft*.
-
-[PSGitHubBI]: http://bit.ly/2SMofDf
 
 ## #PS7Now #PSBlogWeek Contributors
 
@@ -529,19 +518,7 @@ Be sure to watch for more [#PS7Now][PS7Now]! [#PSBlogWeek][PSBlogWeek] articles 
 And be sure to follow us on Twitter and add our blogs to your feed reader.
 We can help you on your PowerShell enlightenment journey, along with many others in the PowerShell community.
 
-| Author | Twitter | Blog |
-| :----- | :----- | :----- |
-|Adam Bertram|[@adbertram](https://twitter.com/adbertram)|[https://adamtheautomator.com/](https://adamtheautomator.com/) |
-|Dave Carroll| [@thedavecarroll](https://twitter.com/thedavecarroll)|[https://powershell.anovelidea.org/](https://powershell.anovelidea.org/) |
-|Josh Duffney|[@joshduffney](https://twitter.com/joshduffney)|[http://duffney.io/](http://duffney.io/) |
-|Dan Franciscus|[@danfranciscus](https://twitter.com/danfranciscus)|[https://winsysblog.com/](https://winsysblog.com/) |
-|Jeff Hicks|[@jeffhicks](https://twitter.com/jeffhicks)|[https://jdhitsolutions.com/](https://jdhitsolutions.com/) |
-|Mike Kanakos|[@MikeKanakos](https://twitter.com/MikeKanakos)|[https://www.networkadm.in/](https://www.networkadm.in/) |
-|Josh King|[@WindosNZ](https://twitter.com/WindosNZ)|[https://toastit.dev/](https://toastit.dev/) |
-|Thomas Lee|[@doctordns](https://twitter.com/doctordns)|[https://tfl09.blogspot.com/](https://tfl09.blogspot.com/) |
-|Tommy Maynard|[@thetommymaynard](https://twitter.com/thetommymaynard)|[https://tommymaynard.com/](https://tommymaynard.com/) |
-|Jonathan Medd|[@jonathanmedd](https://twitter.com/jonathanmedd)|[https://www.jonathanmedd.net/](https://www.jonathanmedd.net/) |
-|Prateek Singh|[@singhprateik](https://twitter.com/singhprateik)|[https://ridicurious.com/](https://ridicurious.com/) |
+{{% ps7now %}}
 
 ## Summary
 

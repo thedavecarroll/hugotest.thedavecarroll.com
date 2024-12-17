@@ -151,9 +151,9 @@ In general, I'm a perfectionist. Everything has to be just right. This module ha
 
 I believe the PoShDynDnsApi module is a powerful and easy tool to manage your Dyn Managed DNS service. I hope you will, too.
 
-If you discover issues, please submit a [bug report][7] via GitHub.
+If you discover issues, please submit a [bug report](https://github.com/thedavecarroll/PoShDynDnsApi/issues/new?labels=bug&template=bug_report.md&title=%5BBUG%5D) via GitHub.
 
-If you would like a new feature or command that interacts with the Dyn Managed DNS REST API, please submit the [feature request][8] via GitHub.
+If you would like a new feature or command that interacts with the Dyn Managed DNS REST API, please submit the [feature request](https://github.com/thedavecarroll/PoShDynDnsApi/issues/new?labels=enhancement&template=feature_request.md&title=%5BNew+Feature%5D) via GitHub.
 
 If you just want to comment on how much you like the module or this blog post, please leave it below.
 
@@ -165,5 +165,3 @@ PowerShell to the people!
 [4]: https://help.dyn.com/understanding-works-api/
 [5]: https://help.dyn.com/rest-resources/
 [6]: https://help.dyn.com/rest/
-[7]: https://github.com/thedavecarroll/PoShDynDnsApi/issues/new?labels=bug&template=bug_report.md&title=%5BBUG%5D
-[8]: https://github.com/thedavecarroll/PoShDynDnsApi/issues/new?labels=enhancement&template=feature_request.md&title=%5BNew+Feature%5D

@@ -134,7 +134,7 @@ In fact, any type not discovered automatically will be cast as a `string`.
 We can assume (maybe incorrectly) that for `PSCustomObject`s, we only have to check those properties cast as `string`.
 
 For the purposes of the original challenge, this should be sufficient.
-However, I want to use this tool to help me create class definitions for [BluebirdPS][BluebirdPS].
+However, I want to use this tool to help me create class definitions for [BluebirdPS](https://www.powershellgallery.com/packages/BluebirdPS/0.8.3).
 The output from the TwitterAPI for several objects include different `uri` and `datetime` typed properties.
 
 I'd like to take this time explain the design practice when creating a tool like `Resolve-PropertyType`.
@@ -156,8 +156,6 @@ Many PowerShell scripters, especially the more advanced, save function definitio
 Check out the relatively simple function I wrote to handle detection the specific data types - URI, DateTime, and Twitter DateTime.
 
 {{< gist id="a0db4e3b3c97941ddf11e161288408d7" file="Part2-Resolve-PropertyType.ps1" >}}
-
-[BluebirdPS]: https://bit.ly/BluebirdPS
 
 #### Properly PascalCase Property Names, aka A Case for PascalCase
 
@@ -196,7 +194,7 @@ ScreenName
 Location
 ```
 
-If this scenario sounds familiar, you may be recalling a recent article by Jeff Hicks, [Creating PowerShell Property Names][CreatingPowerShellPropertyNames].
+If this scenario sounds familiar, you may be recalling a recent article by Jeff Hicks, [Creating PowerShell Property Names](https://jdhitsolutions.com/blog/powershell/7937/creating-powershell-property-names/).
 Jeff was playing around with the `BluebirdPS` module and called out the fact that it does not output a proper looking PowerShell object.
 Obviously, I knew that the API-based commands returned the raw object from Twitter, after conversion by `Invoke-Method`.
 It was a matter of releasing the minimum viable product to get it in the hands of people, maybe even awesome people like Jeff, to begin testing.
@@ -222,12 +220,8 @@ When I realized that some properties were already PascalCase, I included an `if/
 
 {{< gist id="a0db4e3b3c97941ddf11e161288408d7" file="Part2-ConvertTo-PascalCase.ps1" >}}
 
-To discover more best practices and guidelines for style, visit the unofficial [PowerShellPracticeAndStyle][PowerShellPracticeAndStyle] repo.
-The [Code Layout and Formatting][ACaseForPascalCase] document specifically discusses the capitalization conventions.
-
-[CreatingPowerShellPropertyNames]: https://jdhitsolutions.com/blog/powershell/7937/creating-powershell-property-names/
-[PowerShellPracticeAndStyle]: https://github.com/PoshCode/PowerShellPracticeAndStyle
-[ACaseForPascalCase]: https://github.com/PoshCode/PowerShellPracticeAndStyle/blob/master/Style-Guide/Code-Layout-and-Formatting.md#capitalization-conventions
+To discover more best practices and guidelines for style, visit the unofficial [PowerShellPracticeAndStyle](https://github.com/PoshCode/PowerShellPracticeAndStyle) repo.
+The [Code Layout and Formatting](https://github.com/PoshCode/PowerShellPracticeAndStyle/blob/master/Style-Guide/Code-Layout-and-Formatting.md#capitalization-conventions) document specifically discusses the capitalization conventions.
 
 ### Updated Constructor
 
@@ -305,10 +299,7 @@ Class properties can have property attributes that defines how the property can 
 - validation
   - You can use the same validation attributes as you can for advanced functions.
 
-Check out more information on the [hidden attribute][Hidden] and [static and property validation attributes][AboutClasses] on the Microsoft Docs site.
-
-[Hidden]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hidden?view=powershell-7.1
-[AboutClasses]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.1#static-attribute
+Check out more information on the [hidden attribute](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hidden?view=powershell-7.1) and [static and property validation attributes](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_classes?view=powershell-7.1#static-attribute) on the Microsoft Docs site.
 
 ### One Last Thing on the PascalCase Case
 

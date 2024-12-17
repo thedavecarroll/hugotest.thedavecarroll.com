@@ -8,8 +8,8 @@ categories: ["PowerShell"]
 
 ## Introduction
 
-In January, I published the first release of the PoShDynDnsApi module to the [PowerShellGallery][1],
-along with a [blog post introducing the module][2]. It was the culmination of months of
+In January, I published the first release of the PoShDynDnsApi module to the [PowerShellGallery](https://www.powershellgallery.com/packages/PoShDynDnsApi/0.1.2),
+along with a [blog post introducing the module]({{< relref "powershell/module-poshdyndnsapi.md" >}}). It was the culmination of months of
 often-distracted work that began nearly a year prior.
 
 In this post, I want to give you a peek into my development process.
@@ -61,7 +61,7 @@ Dyn provides two APIs which can be used to interact with the Managed DNS Service
 Each API has specific requirements for establishing a session, creating resources, querying resources, modifying
 resources, and deleting resources.
 
-For more details, please visit [Dyn's DNS API Quick-Start Guide][3].
+For more details, please visit [Dyn's DNS API Quick-Start Guide](https://help.dyn.com/dns-api-guide/).
 
 ## PowerShell Web Cmdlets
 
@@ -83,10 +83,12 @@ The following table provides a quick overview of the major changes between the w
 |Windows PowerShell |Desktop   | System.Net.WebRequest                  | System.Net.WebResponse              | No                    | Single string, joined by commas | HttpWebResponse.Headers
 |PowerShell Core    |Core      | System.Net.Http.HttpClient (.Net 4.5+) | System.Net.Http.HttpResponseMessage | Yes                   | Sting array                     | HttpResponseMessage.Content.Headers
 
-The table data was distilled from a series of blog posts ([Part 1][4], [Part 2][5],
-and [Part 3][6]) on _PowerShell Core Web Cmdlets in Depth_ by [Mark Kraus][7]. Please
+The table data was distilled from a series of blog posts ([Part 1](https://get-powershellblog.blogspot.com/2017/11/powershell-core-web-cmdlets-in-depth.html), [Part 2]( https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth.html),
+and [Part 3](https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth_24.html)) on _PowerShell Core Web Cmdlets in Depth_ by [Mark Kraus][7]. Please
 check out Mark's posts for details, as he's pretty much a leading authority since he's writing most of the feature work
 for them.
+
+[7]: https://twitter.com/markekraus
 
 ### Strictly RESTing
 
@@ -100,7 +102,7 @@ There is also major differences in how the two PSEditions handle errors.
 
 ## Testing Tool
 
-For testing external to PowerShell, I use the [Insomnia REST Client][8]. I find the UI to be very
+For testing external to PowerShell, I use the [Insomnia REST Client](https://insomnia.rest/). I find the UI to be very
 clean and the application to be all that I need in a REST client. There are many REST clients like it, but this one is
 mine (of choice).
 
@@ -108,8 +110,9 @@ mine (of choice).
 
 ## Module Variables
 
-My blog post in October 2018 on module variables received a lot of views, largely due to a gracious retweet from [Don
-Jones][9]. In it, I describe how I began using module variables, aka script scoped variables.
+My blog post in October 2018 on module variables received a lot of views, largely due to a gracious retweet from [Don Jones][9]. In it, I describe how I began using module variables, aka script scoped variables.
+
+[9]: https://twitter.com/concentrateddon
 
 Originally, I had created globally scoped variables for the API client URL, the API version, and the authentication
 token. The first was created in the module's psm1 file, while the others were created in the `Connect-DynDnsSession`.
@@ -117,7 +120,7 @@ token. The first was created in the module's psm1 file, while the others were cr
 Looking back on my original implementation, all I can say is that I was (and still am) learning.
 
 {{< notice type="tip" >}}
-There are some people, like my friend [Steven Maglio][10], who attests a globally scoped hashtable allows for quick edits and could be valuable in debugging and sanity checking.
+There are some people, like my friend [Steven Maglio](http://stevenmaglio.blogspot.com/), who attests a globally scoped hashtable allows for quick edits and could be valuable in debugging and sanity checking.
 {{< /notice >}}
 
 ### Session
@@ -452,7 +455,7 @@ Finally, the data is converted to the appropriate custom class and sent to stand
 ## Help
 
 Instead of including comment-based help in the functions themselves, I elected to use the PowerShell help system. I
-provide external and online help. With the help of [platyPS][11], I was able to
+provide external and online help. With the help of [platyPS](https://www.powershellgallery.com/packages/platyPS), I was able to
 create the external MAML-xml file and the markdown for the online help.
 
 I plan on providing updatable help within the next release or two. PlatyPS can help with that, too.
@@ -491,15 +494,3 @@ but one that I'm glad I started. Thank you for reading this post. I hope it can 
 
 If you have any questions, find errors (typos too!), or have suggestions that can make my module better, please leave a
 comment below. Thank you, again.
-
-[1]: http://bit.ly/PoShDynDnsApi
-[2]: http://bit.ly/2GXJjnt
-[3]: https://help.dyn.com/dns-api-guide/
-[4]: https://get-powershellblog.blogspot.com/2017/11/powershell-core-web-cmdlets-in-depth.html
-[5]: https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth.html
-[6]: https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth_24.html
-[7]: https://twitter.com/markekraus
-[8]: https://insomnia.rest/
-[9]: https://twitter.com/concentrateddon
-[10]: http://stevenmaglio.blogspot.com/
-[11]: https://www.powershellgallery.com/packages/platyPS
