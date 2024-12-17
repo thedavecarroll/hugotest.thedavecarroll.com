@@ -21,8 +21,8 @@ modules:
     order: 1
     status: inactive
     description: A Twitter Automation Client for PowerShell 7. Tweet, retweet, send direct messages, manage lists, and more.
-    psgallery: true
-    online_help: https://docs.bluebirdps.dev/en/latest/
+    psgallery: false
+    online_help: null
   - name: PoShDynDnsApi
     status: inactive
     order: 2
