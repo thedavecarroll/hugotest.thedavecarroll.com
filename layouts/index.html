@@ -1,0 +1,51 @@
+{{ define "main" }}
+    {{/* Add the homepage content section */}}
+    {{ if .Content }}
+        <header class="page-header">
+            <div class="page-header-content{{ if .Params.image }} has-image{{ end }}">
+                {{ if .Params.image }}
+                <div class="page-header-bg">
+                    <img src="{{ .Params.image }}" alt="" />
+                </div>
+                {{ end }}
+                <div class="page-header-text">
+                    <h1 class="page-header-title">{{ .Title }}</h1>
+                    {{/*  <div class="page-content">  */}}
+                    <section class="page-section card">
+                        {{/*  <div class="card-content">  */}}
+                            {{ .Content }}
+                        {{/*  </div>  */}}
+                    </section>
+                {{/*  </div>  */}}
+                </div>
+            </div>
+        </header>
+        {{/*  <header class="page-header">   
+        <section class="homepage-content article-page"> 
+            <article class="article single">
+                <div class="page-content">
+                    {{ .Content }}
+                </div>
+            </article>
+        </header>
+        </section>  */}}
+    {{ end }}
+
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+    {{ $pag := .Paginate ($filtered) }}
+
+    <section class="article-list">
+        {{ range $index, $element := $pag.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

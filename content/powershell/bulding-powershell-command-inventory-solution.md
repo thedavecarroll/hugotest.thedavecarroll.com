@@ -497,7 +497,7 @@ Count CodeType
    10 Alias
 ```
 
-_Looks like I need to go back and remove some Aliases._
+*Looks like I need to go back and remove some Aliases.*
 
 ### Count of Verb-Noun Commands and Aliases
 
@@ -541,7 +541,7 @@ temp.ps1                   D:\GitHub\Workshop\PowerShell\Scripts\temp.ps1       
 temp.ps1                   D:\GitHub\Workshop\PowerShell\Scripts\temp.ps1                       94    25 Alias Select    Select-Object
 ```
 
-In the _begin_ block of `Get-PSCodeStructure`, you will find `$Aliases = Get-Alias`.
+In the *begin* block of `Get-PSCodeStructure`, you will find `$Aliases = Get-Alias`.
 After the regex patterns have gathered any matches, I split the line and start iterating through each 'word'.
 
 Since `foreach` and `select` are also part of Verb-Noun commands, I first attempt to match on them specifically.
@@ -623,13 +623,10 @@ if ($PathType -eq 'DirectoryInfo') {
 
 To learn more about regex, here are a few resources that go much deeper into the topic than this article.
 
-* [Powershell: The many ways to use regex](https://powershellexplained.com/2017-07-31-Powershell-regex-regular-expression/) on [Kevin Marquette][kevinmarquette]'s blog
-* [A Practical Guide for Using Regex in PowerShell](http://duffney.io/APracticalGuideforUsingRegexinPowerShell) on [Josh Duffney][joshduffney]'s blog
+* [Powershell: The many ways to use regex](https://powershellexplained.com/2017-07-31-Powershell-regex-regular-expression/) on {{< influencer "kevmar" >}}
+* [A Practical Guide for Using Regex in PowerShell](http://duffney.io/APracticalGuideforUsingRegexinPowerShell) on [Josh Duffney's](https://www.linkedin.com/in/joshduffney/) blog
 * [About Regular Expressions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_regular_expressions?view=powershell-7)
 * [.Net Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) on Regular Expression Language
-
-[kevinmarquette]: https://twitter.com/kevinmarquette
-[joshduffney]: https://twitter.com/joshduffney
 
 {{< notice type="warning" >}}
 I'm not a regex guru.

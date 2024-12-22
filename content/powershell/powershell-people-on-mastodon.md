@@ -8,21 +8,18 @@ categories: ["PowerShell"]
 
 ## Mastodon
 
-In light of recent events with Twitter, you may have heard about a different micro-blogging site called [Mastodon][Mastodon].
+In light of recent events with Twitter, you may have heard about a different micro-blogging site called [Mastodon](https://joinmastodon.org/).
 It has been around for a few years, 2016 to be exact, so it's definitely not *new*.
 
 And it's technically not *a* site, as the heart and possibly the main draw of Mastodon is that it has multiple instances
 all run by individuals, typically not large corporations.
 Each instance can establish its own Code of Conduct and Terms of Services.
 Some instances require an invite, others do not.
-They are connected through federation to what's know as the [Fediverse][Fediverse].
+They are connected through federation to what's know as the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
 
 This explanation definitely falls short in describing Mastodon's history and capabilities.
 It is meant to be a brief introduction as there have been many bloggers writing about Mastodon over the last month.
 I don't want to waste any more time explaining what it is, how to create an account, or whatever.
-
-[Mastodon]: https://joinmastodon.org/
-[Fediverse]: https://en.wikipedia.org/wiki/Fediverse
 
 ## Enter BluebirdPS
 
@@ -41,7 +38,7 @@ Users that are creating accounts have been providing their Mastodon account refe
 Anecdotally, it's best practice to leave a *forwarding address* as doing so will help others find you.
 
 But what if you wanted to find *your* followers in the Mastodon federation?
-[BluebirdPS][BluebirdPS] can help with that.
+[BluebirdPS]({{< relref "retired-links.md" >}}) can help with that.
 
 In BluebirdPS v0.8.0, I included a command called `Find-TwitterMastodonLinks` that will find Mastodon account references for you.
 
@@ -322,25 +319,19 @@ Here are the basic steps that you would need to perform in order to generate you
 
 ## GitHub Actions
 
-If that seems like a lot of trouble to go through, [Chrissy LeMaire][Chrissy] has worked on
+If that seems like a lot of trouble to go through, [Chrissy LeMaire](https://bsky.app/profile/funbucket.dev) has worked on
 a few GitHub Actions that will help in the automated discovery, import, and export.
 
-- [Exodus][Exodus]
+- [Exodus](https://github.com/marketplace/actions/twitter-exodus)
   - Searches lists, hashtags, account followers and more for Mastodon links in their name, bio or pinned tweet.
   - Saves information as CSV that can be imported.
-  - Powered by [BluebirdPS][BluebirdPS].
-- [Influx][Influx]
+  - Powered by [BluebirdPS]({{< relref "retired-links.md" >}}).
+- [Influx](https://github.com/marketplace/actions/mastodon-influx)
   - Imports CSV files into your Mastodon account.
   - Categories imported - follows, mutes, account blocks, lists, bookmarks, and domain blocks.
-- [Fossilize][Fossilize]
+- [Fossilize](https://github.com/marketplace/actions/mastodon-fossilize)
   - Automated backup of your Mastodon account items.
   - Categories exported - follows, mutes, account blocks, lists, bookmarks, domain blocks, followers, posts.
-
-[Chrissy]: https://tech.lgbt/@cl
-[Exodus]: https://github.com/marketplace/actions/twitter-exodus
-[BluebirdPS]: https://www.powershellgallery.com/packages/BluebirdPS
-[Influx]: https://github.com/marketplace/actions/mastodon-influx
-[Fossilize]: https://github.com/marketplace/actions/mastodon-fossilize
 
 ## Summary
 

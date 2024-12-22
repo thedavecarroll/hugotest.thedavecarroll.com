@@ -28,13 +28,11 @@ After I decided to not add any new features, I closed the last few that targeted
 ## First Public Issue
 
 When I received a new GitHub issue email alert just over a week ago, excitement and nervousness overcame me.
-It was the [first issue][issue11] submitted by someone in the community using any of my modules.
+It was the first issue submitted by someone in the community using any of my modules.
 
 I followed the link and started reading it.
 They had used my **bug** issue template and responded to all of its directives.
 There was enough information that I could verify the behavior of the existing code.
-
-[issue11]: https://github.com/thedavecarroll/PoShDynDnsApi/issues/11
 
 ## First Response
 
@@ -81,9 +79,7 @@ I explained that `Get-DynDnsHistory` would have all of the API calls URI's inclu
 And I explained *(though perhaps not very clearly, as I reread my response)* that `Get-DynDnsRecord` first call retrieves a list of object URIs.
 Then, the list is iterated through and the individual record is returned.
 
-I also suggested that using [Insomnia Core][InsomniaCore] could help with understanding the calls.
-
-[InsomniaCore]: https://insomnia.rest/download/core/?
+I also suggested that using [Insomnia Core](https://insomnia.rest/) could help with understanding the calls.
 
 ### First Feedback
 

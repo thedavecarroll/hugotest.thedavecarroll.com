@@ -23,7 +23,7 @@ For the beginner challenge, the Chairman wanted the challenger to:
 > Show all 3 ways.
 > You don’t need to write any functions or scripts.
 
-#### Modulus
+### Modulus
 
 Using the modulus operator, `%`, seems to be the easiest way to determine if a number is even or odd.
 It returns the remainder of a division operation and anything evenly divisible by 2 is even.
@@ -32,7 +32,7 @@ I used this in three of my beginner methods.
 In these, I iterated through the range of numbers and divided each one by 2.
 Then, depending on which method, I either sent the result to the pipeline or added it to a variable.
 
-#### Range Operator
+### Range Operator
 
 For two of my beginner methods, the start and end numbers are created using the range operator - `..`.
 
@@ -84,7 +84,7 @@ PS7 > 1.1..3.7
 #>
 ```
 
-### Method 1
+## Method 1
 
 For the first method, I chose to loop using the `ForEach-Object` cmdlet which accepts input from the [pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7).
 
@@ -138,7 +138,7 @@ Finally, I use the `Measure-Object` cmdlet's `-Sum` parameter to get the sum of 
 `$PSItem` was introduced in Windows PowerShell version 2 for greater clarity.
 {{< /notice >}}
 
-### Method 2
+## Method 2
 
 For my next method, I chose to loop using a `foreach` statement.
 
@@ -171,7 +171,7 @@ It cannot take input from the pipeline, nor can it send objects out to the pipel
 `ForEach-Object` cmdlet honors the pipeline for input and output.
 {{< /notice >}}
 
-### Method 3
+## Method 3
 
 For my second method, I chose to loop using a `for` statement.
 
@@ -198,7 +198,7 @@ Each iteration will increase the memory usage and will cause performance issues 
 Sometimes, however, this is the simplest way to capture the output in a loop, especially for beginners.
 {{< /notice >}}
 
-### Method 4
+## Method 4
 
 For my last beginner method, I wanted to do something a little harder and forego using modulus.
 

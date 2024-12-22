@@ -65,11 +65,11 @@ _the console to generate the desired result._
 
 PowerShell currently comes in three editions: Windows PowerShell, PowerShell Core, and PowerShell.
 
-Edition | Operating System | Versions | PSEdition | .Net Version
+|Edition|Operating System|Versions|PSEdition|.Net Version|
 |-|-|-|-|-|
-Windows PowerShell | Windows only | 1.0-5.1 | Desktop | .Net Framework
-PowerShell Core | Windows, Linux, MacOS | 6.x | Core | .Net Core 2.0
-PowerShell | Windows, Linux, MacOS | 7.x | Core | .Net Core 3.0
+|Windows PowerShell|Windows only|1.0-5.1 |Desktop|.Net Framework|
+|PowerShell Core|Windows, Linux, MacOS|6.x|Core|.Net Core 2.0|
+|PowerShell|Windows, Linux, MacOS|7.x|Core|.Net Core 3.0|
 
 For more information on PowerShell editions, visit Microsoft Docs entry for
 [About PowerShell Editions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_editions?view=powershell-6&viewFallbackFrom=powershell-5.1).
@@ -172,12 +172,12 @@ type of command just like applications, such as _notepad.exe_.
 
 ### Cmdlet
 
-`Get-Help` is an example of a cmdlet. PowerShell *cmdlets* (pronounced _command-lets_ or _command-let_ for singular) are
+`Get-Help` is an example of a cmdlet. PowerShell _cmdlets_ (pronounced _command-lets_ or _command-let_ for singular) are
 commands that are typically written in .NET (or .NET Core) C# programming language and compiled.
 
 ### Function
 
-`Get-Verb` is an example of a function. PowerShell *functions* are self-contained PowerShell statements. Basic and
+`Get-Verb` is an example of a function. PowerShell _functions_ are self-contained PowerShell statements. Basic and
 advanced functions can be written. Advanced functions provides greater control over the input, processing, and output of
 the command. To learn more about functions, see the conceptual help using `Get-Help about_Functions`.
 
@@ -187,7 +187,7 @@ For this challenge, we will not use functions.
 
 ### Alias
 
-A PowerShell *alias* is an alternate name for another command. Aliases are typically short forms of command names and
+A PowerShell _alias_ is an alternate name for another command. Aliases are typically short forms of command names and
 save you several keystrokes at the console.
 
 There are several default aliases. To see all aliases configured in your current session, you can use `Get-Alias`. To
@@ -421,8 +421,6 @@ is about the shortest possible.
 gci -r -file | measure length -a -s | select Count,Sum,Average,{$env:COMPUTERNAME},{Get-Date}
 ```
 
-#### Solution 1 Output
-
 ```console
 Count             : 11322
 Sum               : 124909506
@@ -444,8 +442,6 @@ name the properties. If you just use an expression, the expression itself is use
 $files = gci -r -file
 $files | measure length -a -s | select Count,Sum,Average,@{l='ComputerName';e={$env:COMPUTERNAME}},@{l='Date';e={Get-Date}}
 ```
-
-#### Solution 2 Output
 
 ```console
 Count        : 11322

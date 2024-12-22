@@ -20,7 +20,7 @@ New-TimeSpan -Start '8/17/2020' -End (Get-Date).Date.ToShortDateString() | Selec
 154
 ```
 
-It's been 154 days since I've published the article on [responding to a GitHub issue for my PoShDynDnsApi module]({{< relref "archived-links.md" >}}).
+It's been 154 days since I've published the article on [responding to a GitHub issue for my PoShDynDnsApi module]({{< relref "retired-links.md" >}}).
 
 I wanted to go over a few of the things that have been taking my time.
 
@@ -179,8 +179,7 @@ Here is a recap of my PowerShell contributions for 2020.
 ##### PS7Now PSBlogWeek
 
 {{< influencer jeffhicks >}} asked me to participate in #PSBlogWeek for the PowerShell 7 #PS7Now release.
-I was extremely flattered and wrote [two articles](https://powershell.anovelidea.org/tags/#ps7now) in March.
-
+I was extremely flattered and wrote [two articles](/tags/ps7now/) in March.
 
 ##### PowerShell Conference Book, Volume 3
 
@@ -193,12 +192,12 @@ Proceeds goes to the [OnRamp Scholarship](https://events.devopscollective.org/On
 ##### BluebirdPS
 
 Last year, I began work on a PowerShell 7 module to interact with the Twitter API.
-I consulted with a few PowerShell community members and eventually settled on the name [BluebirdPS]({{< relref "archived-links.md" >}}).
+I consulted with a few PowerShell community members and eventually settled on the name [BluebirdPS]({{< relref "retired-links.md" >}}).
 
-If you are interested in using BluebirdPS, visit the _Getting Started: Pre-requisites_ documentation page.
+If you are interested in using BluebirdPS, visit the *Getting Started: Pre-requisites* documentation page.
 
 I want the module to be easy to use by the community and contain useful features/commands.
-To that end, please feel free to submit _discussion issue_, _feature request_, or _bug report_.
+To that end, please feel free to submit *discussion issue*, *feature request*, or *bug report*.
 
 ##### Presentations
 

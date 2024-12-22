@@ -9,7 +9,7 @@ categories: ["PowerShell"]
 
 ## A PowerShell Conversion Challenge
 
-A few days ago I published [Part 1][SolutionPart1] of my solution to the IronScripter [PowerShell Conversion Challenge][IronScripterChallenge].
+A few days ago I published [Part 1]({{< relref "powershell/creating-class-definition-from-object-part-1.md" >}}) of my solution to the IronScripter [PowerShell Conversion Challenge](https://ironscripter.us/a-powershell-conversion-challenge/).
 If you haven't already, please check out that article, as we will be picking up where it left off.
 
 As a quick recap, my solution satisfied 7 out of 10 of the requirements set forth by the IronScripter Chairman,
@@ -31,9 +31,6 @@ And here are my remaining requirements:
   - Any object that contains a property which is itself another complex object should generate a separate class definition.
 - Allow user to specify which properties that will be hidden. *(slightly modified)*
 - If not specified, detect the property type and include in definition.
-
-[SolutionPart1]: https://powershell.anovelidea.org/powershell/creating-class-definition-from-object-part-1/
-[IronScripterChallenge]: https://ironscripter.us/a-powershell-conversion-challenge/
 
 ## The Path to a Solution
 

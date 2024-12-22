@@ -17,10 +17,10 @@ is even less easier to write some PowerShell to make it "dynamic".
 In order to enable named Data elements in your event logs, you have to go through several hoops. I won't go through them
 in this post, but here are some links to various posts that can help you get started. _It's not for the faint of heart!_
 
-First, I found [CustomProvider on GitHub][1] which references [this blog post][2].
+First, I found [CustomProvider on GitHub](https://github.com/ggcooper/CustomProvider) which references [this blog post](http://blog.dlgordon.com/2012/06/writing-to-event-log-in-net-right-way.html).
 
 To get the Message Compiler (mc) and Resource Compiler (rc), you will need to download the
-[Windows 10 SDK][3] and install the Windows SDK for UWP Managed Apps (which required the Signing Tools
+[Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and install the Windows SDK for UWP Managed Apps (which required the Signing Tools
 for Desktop Apps). To get the ManifestGenerator (EcGenMan), you will need to hit up the the Windows SDK archive section
 and download an older version.
 
@@ -42,17 +42,17 @@ Something like the following
 
 |Name|Description|
 |-|-|
-|ScriptName|The name of the PowerShell script.
-|Status|The results of the execution of the PowerShell script.
-|LogFile|This is were the detailed log can be found.
+|ScriptName|The name of the PowerShell script.|
+|Status|The results of the execution of the PowerShell script.|
+|LogFile|This is were the detailed log can be found.|
 
 Also, be sure to establish the event ID ranges that you want to use for each schema.
 
-|Event ID Range|Purpose
+|Event ID Range|Purpose|
 |-|-|
-|100-199|Initialization
-|200-299|Script actions
-|300-399|Completion
+|100-199|Initialization|
+|200-299|Script actions|
+|300-399|Completion|
 
 This is a very simple schema. But with it, you would be able to search the logs with an XML filter for warning events
 for your event source where the script `MyScript.ps1` generated the event.
@@ -96,7 +96,7 @@ I'm using the ConvertFrom-Json to translate the unicode escape characters back t
 
 ### Usage
 
-First, download the simple module script from the [Gist EventData.psm1][4].
+First, download the simple module script from the [Gist EventData.psm1](https://gist.github.com/thedavecarroll/765547120aa1fa801919040f4d5d2046).
 
 Once you import the module, you can use the two functions to create a new Windows event log provider and write events
 with structured Data, though not named Data elements.
@@ -116,7 +116,7 @@ PS C:\ > New-EventSource -EventLog Application -Source MyCustomEventSource
 ### Writing a New Event
 
 In order to write a new event, first you will need an OrderedDictionary. For details, please visit
-[Microsoft Docs about_Hash_Tables][5].
+[Microsoft Docs about_Hash_Tables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-6#creating-ordered-dictionaries).
 
 #### Create the Event Data
 
@@ -217,18 +217,13 @@ Unless you want to spend a ton of time crafting a manifest and compiling all the
 event provider, writing EventData using a structured format such as JSON or XML virtually negates the hassle, while
 still providing you the option for querying with a good XML filter.
 
-I hope you’ve found this interesting or informative. If you have any comments or questions, please post them below.
+I hope you’ve found this interesting or informative.
+If you have any comments or questions, please post them below.
 
 Thanks for reading! Good luck wrangling your EventData!
 
 {{< notice type="tip" >}}
 Once things settle down with my new job and life stuff, I will incorporate these two functions into my
-[PoShEvents](https://www.powershellgallery.com/packages/PoShEvents/) module. If you have been paying attention to its repo, there are a couple new
-functions to generate XML filters on the fly.
+[PoShEvents](https://www.powershellgallery.com/packages/PoShEvents/) module.
+If you have been paying attention to its repo, there are a couple new functions to generate XML filters on the fly.
 {{< /notice >}}
-
-[1]: https://github.com/ggcooper/CustomProvider
-[2]: http://blog.dlgordon.com/2012/06/writing-to-event-log-in-net-right-way.html
-[3]: https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk
-[4]: https://gist.github.com/thedavecarroll/765547120aa1fa801919040f4d5d2046
-[5]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-6#creating-ordered-dictionaries

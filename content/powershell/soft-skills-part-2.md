@@ -23,7 +23,7 @@ Personalities often collide, fueling negative emotions which break down the conn
 This happens because everyone is a unique individual, a human being capable of myriad emotions (some simultaneously).
 
 Collaboration fails due to a lack of goals and expectations.
-It's also hindered by trust issues between ***Us*** and ***Them***, especially because of the _Chasm of IT_.
+It's also hindered by trust issues between ***Us*** and ***Them***, especially because of the *Chasm of IT*.
 
 ### How to Collaborate for Success
 
@@ -163,7 +163,7 @@ If possible, get them to tell you what exactly angered them.
 If you were the cause, perhaps take responsibility and apologize.
 Involve a third-party to help with conflict resolution, if necessary.
 
-_Most importantly, never put yourself or others in harms way, and never allow a heated discussion to escalate to a physical altercation._
+*Most importantly, never put yourself or others in harms way, and never allow a heated discussion to escalate to a physical altercation.*
 
 ## Summary
 

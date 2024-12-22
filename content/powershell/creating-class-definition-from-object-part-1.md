@@ -10,7 +10,7 @@ categories: ["PowerShell"]
 ## A PowerShell Conversion Challenge
 
 The first IronScripter Challenge for this year was released a few weeks ago.
-The goal for [A PowerShell Conversion Challenge][IronScripterChallenge] is to write a tool that will generate a class definition based on an existing object.
+The goal for [A PowerShell Conversion Challenge](https://ironscripter.us/a-powershell-conversion-challenge/) is to write a tool that will generate a class definition based on an existing object.
 
 I've distilled the requirements into the following list:
 
@@ -19,8 +19,6 @@ I've distilled the requirements into the following list:
 - Work from pipeline
 - Allow user to specify a new class name
 - Support Windows PowerShell 5.1 and PowerShell 7.x
-
-[IronScripterChallenge]: https://ironscripter.us/a-powershell-conversion-challenge/
 
 ### Bonus Requirements
 
@@ -147,9 +145,7 @@ In a class definition, you can include hidden classes, static methods, property 
 
 > I'll be using a few classes from the PoShDynDnsApi module.
 > It contains several custom classes.
-> Check out [the repo][PoShDynDnsApi] for details.
-
-[PoShDynDnsApi]: shttps://github.com/thedavecarroll/PoShDynDnsApi/blob/main/PoShDynDnsApi/Classes/PoShDynDnsApi.Class.ps1
+> Check out [the repo](https://github.com/thedavecarroll/PoShDynDnsApi/blob/main/PoShDynDnsApi/Classes/PoShDynDnsApi.Class.ps1) for details.
 
 In the following example, the class `DynDnsRawData` contains a hidden property `RawData` with a type of `PSCustomObject`.
 Despite the hidden attribute, this class is perhaps one of the simplest you will see.

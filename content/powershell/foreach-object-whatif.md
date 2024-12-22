@@ -128,4 +128,4 @@ and PowerShell. I hope it helps you as well.
 ## Further Reading
 
 In a [guest post](https://blogs.technet.microsoft.com/heyscriptingguy/2014/07/08/getting-to-know-foreach-and-foreach-object/)
-on the __Hey, Scripting Guy!__ blog, MVP and Honorary Scripting Guy [Boe Prox](https://learn-powershell.net/) [@proxb](https://twitter.com/proxb) examines the ForEach-Object cmdlet compared to the ForEach statement.
+on the __Hey, Scripting Guy!__ blog, MVP and Honorary Scripting Guy [Boe Prox](https://learn-powershell.net/) [@proxb](https://www.linkedin.com/in/boeprox/) examines the ForEach-Object cmdlet compared to the ForEach statement.

@@ -143,18 +143,14 @@ gave me enough to create the workflow below.
 I created the `Publish Dave’s Technical Journal` workflow in the `./github/workflows/` folder.
 Next, I changed the branch that would trigger the workflow.
 
-Even though GitHub provides a way to [skip the workflow][GitHubSkipWorkflow] via a commit message, I preferred to have the default to **not** publish.
+Even though GitHub provides a way to [skip the workflow](https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs) via a commit message, I preferred to have the default to **not** publish.
 And I wanted to always publish when triggered manually via `workflow_dispatch`.
-I checked the [Workflow syntax for GitHub Actions][GAWorkflowSyntax] documentation and saw there was an `if` conditional.
-After a few minutes searching the internet, I found a [StackOverflow question][StackOverflow] that gave me enough to create the following conditional.
+I checked the [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) documentation and saw there was an `if` conditional.
+After a few minutes searching the internet, I found a [StackOverflow question](https://stackoverflow.com/questions/63619329/github-action-get-commit-message) that gave me enough to create the following conditional.
 
 ```yaml
 if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, 'publish')
 ```
-
-[GitHubSkipWorkflow]: https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs
-[GAWorkflowSyntax]: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-[StackOverflow]: https://stackoverflow.com/questions/63619329/github-action-get-commit-message
 
 #### Publish Dave's Technical Journal
 
@@ -247,7 +243,7 @@ I deleted the feature branches that each comment created.\
 
 ### Giscus GitHub App
 
-I considered abandoning comments altogether until an internet search deposited me at [Andrew Lock][AndrewLock]'s article [Considering replacing Disqus with Giscus](https://andrewlock.net/considering-replacing-disqus-with-giscus/).
+I considered abandoning comments altogether until an internet search deposited me at [Andrew Lock](https://bsky.app/profile/andrewlock.bsky.social)'s article [Considering replacing Disqus with Giscus](https://andrewlock.net/considering-replacing-disqus-with-giscus/).
 The idea of using [Disqus](https://disqus.com/) was another rabbit hole, albeit shallower, that I decided to abandon.
 That detour cost me less than an hour.
 
@@ -273,8 +269,6 @@ You can see the comment in [GitHub Discussions](https://github.com/thedavecarrol
 As most of readers of my articles are likely IT professionals, there is a good chance that they already have a GitHub account.
 If not, wouldn't it be great to be the catalyst for someone to create an account in order to leave a comment?
 {{< /notice >}}
-
-[AndrewLock]: https://twitter.com/andrewlocknet
 
 #### Configuration
 
@@ -394,11 +388,9 @@ I want to create the following workflows.
 + The standard publish workflow should include a sitemap or new article ping to Google and IndexNow.
 
 {{< notice type="tip" >}}
-When I reached out to PowerShell Twitter, [Josh Rickard][JoshRickard] provided me a link to his [revive-social-media repo](https://github.com/MSAdministrator/revive-social-media) which can submit a post to LinkedIn and publish a Tweet.
+When I reached out to PowerShell Twitter, [Josh Rickard](https://www.linkedin.com/in/josh-rickard/) provided me a link to his [revive-social-media repo](https://github.com/MSAdministrator/revive-social-media) which can submit a post to LinkedIn and publish a Tweet.
 Whether I use that or not, I'm sure it will be helpful for LinkedIn postings.
 {{< /notice >}}
-
-[JoshRickard]: https://twitter.com/MSAdministrator
 
 #### Related Articles
 

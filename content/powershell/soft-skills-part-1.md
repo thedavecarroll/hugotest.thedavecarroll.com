@@ -11,16 +11,14 @@ categories: ["PowerShell"]
 
 A few years ago, maybe the first part of 2019, I was asked to contribute a chapter for the PowerShell Conference Book Volume 2.
 So much has happened since then and I don't remember who did the asking.
-The odds are decent enough though to guess [Mike Kanakos][MikeKanakos].
+The odds are decent enough though to guess [Mike Kanakos](https://www.commandline.ninja/).
 
 This article is the first in a series of three which will be a republishing of my chapter on soft skills.
 I've only gently edited a few items from the original material.
 
-[MikeKanakos]: https://www.commandline.ninja/
-
 ## On the Road to DevOps, Don't Forget the Soft Skills
 
-{{< quote author="Jeffrey Snover" source="Ex-Microsoft Technical Fellow, PowerShell Inventor" author_url="https://bsky.app/profile/jsnover.com">}}
+{{< quote author="Jeffrey Snover" source="Ex-Microsoft Technical Fellow, PowerShell Inventor" author_url="https://bsky.app/profile/jsnover.com">}}{{< mdl-disable "<!-- markdownlint-disable MD034 -->" >}}
 Hard skills like coding, debugging, system design and the ability to schedule and deliver work on time, give you permission to start your technical career.
 You can’t go far if you don’t master these.
 But it takes a lot more to be effective and to accomplish big things.
@@ -34,9 +32,7 @@ The same can be said of DevOps.
 It's about the journey of continual improvement of relations and processes.
 It's about a contributor, a team, and an organization delivering a product (such as an application, service, or platform) more efficiently through effective collaboration.
 
-The first *[PowerShell Conference Book][PSConfBook]* chapter, "PowerShell as a Gateway to DevOps" by Brandon Olin, provides some additional guidelines on what DevOps is and isn't. It also provides a sampling of tools that helps to reinforce a DevOps culture.
-
-[PSConfBook]: https://leanpub.com/powershell-conference-book
+The first *[PowerShell Conference Book](https://leanpub.com/powershell-conference-book)* chapter, "PowerShell as a Gateway to DevOps" by Brandon Olin, provides some additional guidelines on what DevOps is and isn't. It also provides a sampling of tools that helps to reinforce a DevOps culture.
 
 This chapter focuses on a few key soft skills, such as communication and collaboration, that you need in your technical career, especially when practicing and applying DevOps principles and methodologies.
 
@@ -52,7 +48,7 @@ Before exploring soft skills, consider the following statements which many of yo
 + I just don't understand why they refuse to help.
 
 These statements reflect a division between programmers, also known as software developers, and system administrators.
-This division, the _Chasm of IT_, poses a significant challenge to any organization on the path of cultural transformation to implement DevOps practices.
+This division, the *Chasm of IT*, poses a significant challenge to any organization on the path of cultural transformation to implement DevOps practices.
 
 Near the dawn of time, around January 1<sup>st</sup> 1970, the line between programmer and system administrator was blurred, especially in Unix environments.
 
@@ -68,7 +64,7 @@ Operating systems and applications required software developers to write the cod
 Services, such as email and online communities, required complex configuration and operational stability which became the focus of the system administrator.
 
 The division between developers and sysadmins grew with each passing year due to advancements in technology and expansion of services.
-The more technology changed, the more the mindset shifted in each group to handle the new demands until the _Chasm of IT_ became larger than the Grand Canyon.
+The more technology changed, the more the mindset shifted in each group to handle the new demands until the *Chasm of IT* became larger than the Grand Canyon.
 
 Being a professional in the IT industry often brings about egotism.
 After all, the "I" in IT is information.
@@ -197,7 +193,7 @@ You can address communication issues by approaching how you communicate with ind
 
 + **Handling Language and Cultural Differences**
 
-  You _**can**_ overcome a language barrier where you and the other person has some skill in a shared language.
+  You **can** overcome a language barrier where you and the other person has some skill in a shared language.
   In fact, listening to others with accents is a skill that can be learned, but you must be patient and allow yourself enough time.
   If after a while you are still struggling to understand, let the other person know that you are having trouble understanding them.
   Perhaps written communication would be better in this instance.
@@ -207,12 +203,12 @@ You can address communication issues by approaching how you communicate with ind
 
 + **Become an Active Listener**
 
-  If you often find yourself interjecting or interrupting a speaker in a discussion, the first step, and perhaps the hardest, is to realize your _current_ part in the discussion.
-  Even if you _are_ telepathic and know what the person is going to say, give _them_ the opportunity to say it.
-  You are a listener and listeners _listen_.
+  If you often find yourself interjecting or interrupting a speaker in a discussion, the first step, and perhaps the hardest, is to realize your *current* part in the discussion.
+  Even if you *are* telepathic and know what the person is going to say, give *them* the opportunity to say it.
+  You are a listener and listeners *listen*.
   Don't think about what you want to say or ask.
-  Don't think about what the speaker _might_ say next.
-  They will give you the chance to ask questions or make comments between their topics because they know _their_ part of the discussion.
+  Don't think about what the speaker *might* say next.
+  They will give you the chance to ask questions or make comments between their topics because they know *their* part of the discussion.
   Actively listen to the speaker and digest the information they're presenting.
 
 + **Don't Ramble On**

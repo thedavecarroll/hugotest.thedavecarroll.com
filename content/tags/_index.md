@@ -1,5 +1,6 @@
 ---
 title: Tags
+# url: /tags/
 description: Browse articles by tag
 menu:
     main:

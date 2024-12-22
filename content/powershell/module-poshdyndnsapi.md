@@ -22,7 +22,7 @@ Narrator: And this is how Dave started tinkering with the Dyn Managed DNS REST A
 
 ## Introducing the PoShDynDnsApi Module
 
-The `PoShDynDnsApi` module, version 0.1.0, is now available in the [PowerShell Gallery][1].
+The `PoShDynDnsApi` module, version 0.1.0, is now available in the [PowerShell Gallery]({{< relref "retired-links.md" >}}).
 
 PoShDynDnsApi is an unofficial PowerShell module used to interact with Dyn Managed DNS REST API.
 
@@ -36,7 +36,7 @@ I pay $7 monthly in order to have an account that allows me to have a single zon
 
 There are currently 28 commands available to the user.
 
-To see complete examples and command syntax, please visit the [module help][2] site.
+To see complete examples and command syntax, please visit the module help site.
 
 #### Session
 
@@ -108,10 +108,10 @@ These commands will allow you to view users, jobs, or tasks.
 
 Please check out the following links for more information on the Dyn Managed DNS REST API.
 
-* [DNS API Quick-Start Guide][3]
-* [Understanding How The API Works][4]
-* [REST Resources][5]
-* [RESTful API Interface][6]
+* [DNS API Quick-Start Guide](https://help.dyn.com/dns-api-guide/)
+* [Understanding How The API Works](https://help.dyn.com/understanding-works-api/)
+* [REST Resources](https://help.dyn.com/rest-resources/)
+* [RESTful API Interface](https://help.dyn.com/rest/)
 
 ![Disconnect-DynDnsSession](/images/dyndnsdisconnect.png)
 
@@ -158,10 +158,3 @@ If you would like a new feature or command that interacts with the Dyn Managed D
 If you just want to comment on how much you like the module or this blog post, please leave it below.
 
 PowerShell to the people!
-
-[1]: http://bit.ly/PoShDynDnsApi
-[2]: https://powershell.anovelidea.org/modulehelp/PoShDynDnsApi/
-[3]: https://help.dyn.com/dns-api-guide/
-[4]: https://help.dyn.com/understanding-works-api/
-[5]: https://help.dyn.com/rest-resources/
-[6]: https://help.dyn.com/rest/

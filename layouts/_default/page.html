@@ -1,0 +1,62 @@
+{{ define "main" }}
+<article class="page single">
+    {{ if or .Title .Description }}
+    <header class="page-header">
+        <div class="page-header-content{{ if .Params.image }} has-image{{ end }}">
+            {{ if .Params.image }}
+            <div class="page-header-bg">
+                <img src="{{ .Params.image }}" alt="" />
+            </div>
+            {{ end }}
+            <div class="page-header-text">
+                <h1 class="page-header-title">{{ .Title }}</h1>
+                {{ with .Description }}
+                <div class="page-header-description">
+                    {{ . }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </header>
+    {{ end }}
+
+    <div class="page-content">
+        {{ $sections := split .Content "##" }}
+        
+        {{ if eq (len $sections) 1 }}
+            {{/* If no ## headers, put all content in one card */}}
+            <section class="page-section card">
+                <div class="card-content">
+                    {{ .Content }}
+                </div>
+            </section>
+        {{ else }}
+            {{/* Handle content before first ## if it exists */}}
+            {{ $firstSection := index $sections 0 }}
+            {{ if ne (trim $firstSection " \n") "" }}
+            <section class="page-section card">
+                <div class="card-content">
+                    {{ $firstSection | markdownify }}
+                </div>
+            </section>
+            {{ end }}
+
+            {{/* Handle all sections starting with ## */}}
+            {{ range $index, $section := after 1 $sections }}
+                {{ $lines := split $section "\n" }}
+                {{ $title := index $lines 0 }}
+                <section class="page-section card">
+                    <h2 class="card-title">{{ $title }}</h2>
+                    <div class="card-content">
+                        {{ range slice $lines 1 }}
+                            {{ . | markdownify }}
+                        {{ end }}
+                    </div>
+                </section>
+            {{ end }}
+        {{ end }}
+    </div>
+
+    {{ partial "footer/footer" . }}
+</article>
+{{ end }}

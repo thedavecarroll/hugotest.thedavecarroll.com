@@ -6,9 +6,9 @@ tags: ["ps7now", "powershell 7", "pwsh", "experimental features", "experimental"
 categories: ["PowerShell"]
 ---
 
-## #PS7Now! PowerShell 7 Is Here!
+## #PS7Now! PowerShell 7 Is Here
 
-This [#PSBlogWeek]({{< relref "archived-links.md" >}}) focuses on the official release of **PowerShell 7** — the newest,
+This [#PSBlogWeek]({{< relref "retired-links.md" >}}) focuses on the official release of **PowerShell 7** — the newest,
 fastest, and best PowerShell putting the spotlight on PowerShell's Experimental Features.
 
 Get [#PS7Now](https://leanpub.com/ps7now/) to experience them yourself!
@@ -17,7 +17,7 @@ Get [#PS7Now](https://leanpub.com/ps7now/) to experience them yourself!
 
 After becoming open-source software, the PowerShell community requested a mechanism for users to
 try out new features and provide early feedback to feature developers.
-This discussion took place in PowerShell [RFC0029][RFC0029] which was finalized
+This discussion took place in PowerShell [RFC0029](https://github.com/PowerShell/PowerShell-RFC/blob/master/5-Final/RFC0029-Support-Experimental-Features.md) which was finalized
 and implemented in PowerShell Core 6.1.
 
 New features that are not production ready are deemed experimental in nature.
@@ -31,8 +31,6 @@ Please note that user configuration will take precedence over system configurati
 Using the built-in support for experimental features, developers can roll out an alternate command or a parameter to their modules.
 
 Experimental features are not limited to the PowerShell engine itself.
-
-[RFC0029]: https://github.com/PowerShell/PowerShell-RFC/blob/master/5-Final/RFC0029-Support-Experimental-Features.md
 
 ## Experimental Feature Commands
 
@@ -152,14 +150,12 @@ You can find it at the bottom of this article.
 
 ### Module Manifest
 
-In the [Module Experimental Feature][ModuleManifestRFC0029] section of RFC0029, I found
+In the [Module Experimental Feature](https://github.com/PowerShell/PowerShell-RFC/blob/master/5-Final/RFC0029-Support-Experimental-Features.md#module-experimental-feature) section of RFC0029, I found
 where experimental feature support can be added to a module manifest.
 
 In the `PrivateData.PSData` section, there is a new ExperimentalFeatures entry which allows an array
 of hashtables with Name and Description.
 This metadata has been incorporated into the necessary components to update the `PSModuleInfo` object.
-
-[ModuleManifestRFC0029]: https://github.com/PowerShell/PowerShell-RFC/blob/master/5-Final/RFC0029-Support-Experimental-Features.md#module-experimental-feature
 
 ### Feature Naming
 
@@ -183,7 +179,7 @@ Once I realized this, I removed the *PS* from my feature names to reduce any con
 
 ### Experimental Attribute
 
-The [about_Experimental_Feature][about_Experimental_Feature] documentation goes
+The [about_Experimental_Feature](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_experimental_features?view=powershell-7) documentation goes
 into detail on how to use the new `Experimental` attribute.
 
 ```powershell
@@ -199,11 +195,9 @@ The `ExperimentAction` is an `enum` with values of `Hide` or `Show`.
 
 They can be used to provide mutual exclusivity between different versions of a command or parameter.
 
-[about_Experimental_Feature]: https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_experimental_features?view=powershell-7
-
 ### Additional Information
 
-Refer to the [about_Experimental_Feature][about_Experimental_Feature] documentation
+Refer to the [about_Experimental_Feature](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_experimental_features?view=powershell-7) documentation
 for examples of `C#` and how to check if an experimental feature is enabled.
 
 The latter would be necessary when you don't need mutual exclusivity and when writing Pester tests for your code.
@@ -216,7 +210,7 @@ The latter would be necessary when you don't need mutual exclusivity and when wr
 
 ## #PS7Now #PSBlogWeek Contributors
 
-Be sure to watch for more [#PS7Now](https://leanpub.com/ps7now/)! [#PSBlogWeek]({{< relref "archived-links.md" >}}) articles from my fellow contributors and myself.
+Be sure to watch for more [#PS7Now](https://leanpub.com/ps7now/)! [#PSBlogWeek]({{< relref "retired-links.md" >}}) articles from my fellow contributors and myself.
 And be sure to follow us on Twitter and add our blogs to your feed reader.
 We can help you on your PowerShell enlightenment journey, along with many others in the PowerShell community.
 

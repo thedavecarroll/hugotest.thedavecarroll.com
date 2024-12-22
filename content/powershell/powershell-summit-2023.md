@@ -6,7 +6,7 @@ tags: ["powershell-summit-2023", "powershell-summit", "powershell-community", "l
 categories: ["PowerShell"]
 ---
 
-## I'm ready for PowerShell Summit 2023!
+## I'm ready for PowerShell Summit 2023
 
 I've been part of the PowerShell community for a few years now and I've attended some amazing sessions with user groups.
 I've also presented a few times, once for a PowerShell Saturday and a couple other times remotely.
@@ -23,7 +23,7 @@ AirBnb and car rental for a trip down to Vancouver and Portland, check.
 
 > I'm attending my first PowerShell & DevOps Global Summit this year and I'm also a presenter!
 
-If you're interested in attending, please check out [PowerShellSummit.org][PowerShellSummit] where you can [register][Register]. But hurry, registration closes on April 7th!
+If you're interested in attending, please check out [PowerShellSummit.org](https://powershellsummit.org) where you can [register](https://powershellsummit.org). But hurry, registration closes on April 7th!
 
 ## Talks
 
@@ -32,23 +32,23 @@ I was pleasantly surprised when I was notified that two of them were selected.
 
 ### Your Code is Flawless, But How YOU Doing?
 
-If you find yourself without a session to attend Wednesday afternoon, [Andrew Pla][AndrewPla] (the [PowerShell Podcast][PowerShellPodcast] master shiller) and
+If you find yourself without a session to attend Wednesday afternoon, [Andrew Pla](https://andrewpla.tech/) (the [PowerShell Podcast](https://powershellpodcast.podbean.com/) master shiller) and
 I invite you to our session where we will share our individual paths of self discovery and
 healing leading to healthier mental states and happier lives.
 
 ### BluebirdPS: From Nesting to Hatched and Flying
 
-The next day, I will be talking about [BluebirdPS][BluebirdPS], a PowerShell 7 Twitter automation client I wrote a couple years back.
+The next day, I will be talking about [BluebirdPS]({{< relref "retired-links.md" >}}), a PowerShell 7 Twitter automation client I wrote a couple years back.
 While I've presented about BluebirdPS previously, this talk will be more about the creation and
 care-and-feeding of a publicly consumed module.
 
 ### DevOps Fundamentals (OnRamp)
 
-I've presented on my own [DevOps journey][DevOpsJourney] at the 2019 PowerShell Saturday for [RTPSUG][RTPSUG].
+I've presented on my own [DevOps journey](https://github.com/thedavecarroll/Presentations#2019) at the 2019 PowerShell Saturday for [RTPSUG](https://rtpsug.com/).
 At that time, I was still working as a systems engineer even though I had been learning *the ways of DevOps*.
 At the end of August 2020, I started my first position as a DevOps engineer delving deep into AWS, CI/CD pipelines, and Python.
 
-Last December, after the Summit speakers had been selected and notified, I received an email from [Jeff Hicks][JeffHicks] asking me to present on DevOps fundamentals and concepts.
+Last December, after the Summit speakers had been selected and notified, I received an email from {{< influencer "jeffhicks" >}} asking me to present on DevOps fundamentals and concepts.
 Of course, I accepted the offer.
 *Who would turn down a opportunity to give back to the community?*
 
@@ -71,20 +71,10 @@ We support this community because it supports us.
 ## Summary
 
 Hopefully I'll see you at Summit next month.
-If not, then perhaps next year or another [community event][CommunityEvent],
+If not, then perhaps next year or another [community event]( https://powershell.org/),
 like remote or hybrid meetings.
 
 Thank you for being part of the community.
 And thank you for reading this article.
 
 As always, if you have any comments or questions, please post them below.
-
-[PowerShellSummit]: https://powershellsummit.org
-[Register]: https://powershellsummit.org/#!/tickets
-[AndrewPla]: https://andrewpla.tech/
-[PowerShellPodcast]: https://powershellpodcast.podbean.com/
-[BluebirdPS]: https://docs.bluebirdps.dev/en/latest/
-[DevOpsJourney]: https://github.com/thedavecarroll/Presentations#2019
-[RTPSUG]: https://twitter.com/rtpsug
-[JeffHicks]: https://jdhitsolutions.github.io/
-[CommunityEvent]: https://powershell.org/

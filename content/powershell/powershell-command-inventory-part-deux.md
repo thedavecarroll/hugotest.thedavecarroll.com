@@ -10,7 +10,7 @@ categories: ["PowerShell"]
 ## Introduction
 
 It's been ten days since I published an article on my initial solution for the IronScripter challenge
-[Building a PowerShell Command Inventory][CommandInventory].
+[Building a PowerShell Command Inventory](https://ironscripter.us/building-a-powershell-command-inventory/).
 That solution relied on regular expressions, most commonly called *regex*.
 
 The article included a primer on regex mechanics and how to use regex in PowerShell.
@@ -28,9 +28,6 @@ At least, not encountered and known about it.
 This short article will not go into PowerShell AST; please see Mike's articles for a deep dive.
 However, I will explain how I use it in my code.
 
-[CommandInventory]: https://ironscripter.us/building-a-powershell-command-inventory/
-[mikefrobbins]: https://twitter.com/mikefrobbins
-
 ## Intermediate Challenge Revisited
 
 My original solution for the intermediate challenge was a function called `Measure-PSCodeLine`.
@@ -38,7 +35,7 @@ It iterated through each line and matched on regex `\S`.
 
 This way was a bit slow.
 
-[Jeff Hicks][jeffhicks] suggested I take a look at `Measure-Object`, which has a parameter set for
+{{< influencer jeffhicks >}}  suggested I take a look at `Measure-Object`, which has a parameter set for
 line, word, and character count.
 Using this, I updated my function and renamed it since it really isn't tied to PowerShell files specifically.
 
@@ -50,8 +47,6 @@ My new function, `Measure-FileLine`, is much faster; just check out this improve
 The properties in the output from both are a bit different, the main thing to focus on is TotalCodeLines in
 `Measure-PSCodeLine` and TotalLines in `Measure-FileLine`.
 They should be identical, and since they are not, I will err on the side of the one using `Measure-Object`.
-
-[jeffhicks]: https://twitter.com/JeffHicks
 
 ### Updated Intermediate Challenge Solution
 
@@ -66,10 +61,8 @@ The *new-and-improved* solution uses the PowerShell .Net class `[System.Manageme
 methods `ParseFile()` and `ParseInput()`.
 The former is used to read a file while the latter will parse a bare scriptblock.
 
-[Jeff's expanded solution][jeffhickscriptinventorytool] also uses this class and should definitely be
-reviewed to see how he built the module, handled cross-platform execution, used `Write-Information`, and created a PowerShell class.
-
-[jeffhickscriptinventorytool]: https://jdhitsolutions.com/blog/powershell/7559/an-expanded-powershell-scripting-inventory-tool/
+[Jeff's expanded solution](https://jdhitsolutions.com/blog/powershell/7559/an-expanded-powershell-scripting-inventory-tool/)
+also uses this class and should definitely be reviewed to see how he built the module, handled cross-platform execution, used `Write-Information`, and created a PowerShell class.
 
 ### Parser Class
 

@@ -8,7 +8,7 @@ categories: ["PowerShell"]
 
 ## Introduction
 
-In January, I published the first release of the PoShDynDnsApi module to the [PowerShellGallery](https://www.powershellgallery.com/packages/PoShDynDnsApi/0.1.2),
+In January, I published the first release of the PoShDynDnsApi module to the [PowerShellGallery]({{< relref "retired-links.md" >}}),
 along with a [blog post introducing the module]({{< relref "powershell/module-poshdyndnsapi.md" >}}). It was the culmination of months of
 often-distracted work that began nearly a year prior.
 
@@ -78,17 +78,15 @@ Glad you asked. I'll be covering that further down in the post.
 
 The following table provides a quick overview of the major changes between the web cmdlets from Windows PowerShell and PowerShell Core.
 
-|Version            |PSEdition | Primary .NET API                       | Response Object                     | Strict Header Parsing | Headers Values | Content Headers
+|Version|PSEdition|Primary .NET API|Response Object|Strict Header Parsing|Headers Values|Content Headers|
 |-|-|-|-|-|-|-|
-|Windows PowerShell |Desktop   | System.Net.WebRequest                  | System.Net.WebResponse              | No                    | Single string, joined by commas | HttpWebResponse.Headers
-|PowerShell Core    |Core      | System.Net.Http.HttpClient (.Net 4.5+) | System.Net.Http.HttpResponseMessage | Yes                   | Sting array                     | HttpResponseMessage.Content.Headers
+|Windows PowerShell|Desktop|System.Net.WebRequest|System.Net.WebResponse|No|Single string, joined by commas|HttpWebResponse.Headers|
+|PowerShell Core|Core|System.Net.Http.HttpClient (.Net 4.5+)|System.Net.Http.HttpResponseMessage|Yes|Sting array|HttpResponseMessage.Content.Headers|
 
 The table data was distilled from a series of blog posts ([Part 1](https://get-powershellblog.blogspot.com/2017/11/powershell-core-web-cmdlets-in-depth.html), [Part 2]( https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth.html),
-and [Part 3](https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth_24.html)) on _PowerShell Core Web Cmdlets in Depth_ by [Mark Kraus][7]. Please
+and [Part 3](https://get-powershellblog.blogspot.com/2017/12/powershell-core-web-cmdlets-in-depth_24.html)) on _PowerShell Core Web Cmdlets in Depth_ by [Mark Kraus](https://www.linkedin.com/in/markekraus/). Please
 check out Mark's posts for details, as he's pretty much a leading authority since he's writing most of the feature work
 for them.
-
-[7]: https://twitter.com/markekraus
 
 ### Strictly RESTing
 
@@ -110,9 +108,7 @@ mine (of choice).
 
 ## Module Variables
 
-My blog post in October 2018 on module variables received a lot of views, largely due to a gracious retweet from [Don Jones][9]. In it, I describe how I began using module variables, aka script scoped variables.
-
-[9]: https://twitter.com/concentrateddon
+My blog post in October 2018 on module variables received a lot of views, largely due to a gracious retweet from [Don Jones](https://www.linkedin.com/in/concentrateddon/). In it, I describe how I began using module variables, aka script scoped variables.
 
 Originally, I had created globally scoped variables for the API client URL, the API version, and the authentication
 token. The first was created in the module's psm1 file, while the others were created in the `Connect-DynDnsSession`.
@@ -233,7 +229,6 @@ The commands have two parameter sets, `Default` and `Session`.
   * Body
   * SkipSessionCheck
     * Some commands make two queries against the API; it is unlikely the session will expire between the two calls.
-
 
 * Session Parameter Set
   * Body

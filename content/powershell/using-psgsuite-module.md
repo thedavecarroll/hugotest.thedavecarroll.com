@@ -78,20 +78,20 @@ provide the required data for all steps of the process.
 
 |FullName|GivenName|FamilyName|Email|EmployeeType|
 |-|-|-|-|-|-|
-|Donald Edwards|Donald|Edwards|don@anovelidea.org|Staff|
-|Leslie Myers|Leslie|Myers|leslie@anovelidea.org|Staff|
-|Emily Jones|Emily|Jones|emily@anovelidea.org|Faculty|
-|Larry Brooks|Larry|Brooks|larry@anovelidea.org|Faculty|
+|Donald Edwards|Donald|Edwards|`don@anovelidea.org`|Staff|
+|Leslie Myers|Leslie|Myers|`leslie@anovelidea.org`|Staff|
+|Emily Jones|Emily|Jones|`emily@anovelidea.org`|Faculty|
+|Larry Brooks|Larry|Brooks|`larry@anovelidea.org`|Faculty|
 
 #### Sheet: Groups
 
 |Name|Email|Description|OrgUnitPath|
 |-|-|-|-|
-|Business|business@anovelidea.org|Business Department|/test/business|
-|Academics|academics@anovelidea.org|Academics Department|/test/academics|
+|Business|`business@anovelidea.org`|Business Department|/test/business|
+|Academics|`academics@anovelidea.org`|Academics Department|/test/academics|
 
 {{< notice type="tip" >}}
-I used [Doug Finke's NameIT][https://github.com/dfinke/NameIT] module to produce random names.
+I used [Doug Finke's NameIT](https://github.com/dfinke/NameIT) module to produce random names.
 {{< /notice >}}
 
 ## User Process
@@ -115,7 +115,7 @@ $GroupData = Import-GSSheet -SpreadsheetId $Spreadsheet.Id -SheetName 'Groups'
 
 ### Create Organizational Units
 
-We use `Get-GSOrganizationalUnit` to determine if the OU exists. And then we use `New-GSOrganizationalUnit ` to create
+We use `Get-GSOrganizationalUnit` to determine if the OU exists. And then we use `New-GSOrganizationalUnit` to create
 it if it does not.
 
 ```powershell
@@ -258,7 +258,7 @@ Get-GSUserList -SearchBase '/test' -SearchScope Subtree | ForEach-Object {
 
 |PrimaryEmail|AliasValue|
 |-|-|
-|don@anovelidea.org|DonaldEdwards@anovelidea.org|
+|don@anovelidea.org{{< mdl-disable "<!-- markdownlint-disable MD034 -->" >}}|DonaldEdwards@anovelidea.org|
 |emily@anovelidea.org|EmilyJones@anovelidea.org|
 |larry@anovelidea.org|LarryBrooks@anovelidea.org|
 |leslie@anovelidea.org|LeslieMyers@anovelidea.org|

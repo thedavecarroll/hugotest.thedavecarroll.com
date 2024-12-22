@@ -7,7 +7,7 @@ tags: ["psblogweek", "ps7now", "powershell7", "pwsh", "convertfrom-json", "conve
 categories: ["PowerShell"]
 ---
 
-## #PS7Now! PowerShell 7 Is Here!
+## #PS7Now! PowerShell 7 Is Here
 
 Part of #PSBlogWeek, this article is one of many from several community members and PowerShell bloggers, like me, that focus on a given topic.
 
@@ -144,7 +144,7 @@ It was named to align with a similar parameter of `ConvertTo-Json`.
 
 In 5.1, if you attempted to convert a greater depth than 101, you would get a `ConvertFrom-Json : RecursionLimit exceeded. (606)` error and a sea of red in your console.
 
-In **PowerShell 7**, `Get-Help -Name ConvertFrom-Json -Full` reveals that `-Depth` parameter accepts type `[Int32]` and has a default value of _1024_.
+In **PowerShell 7**, `Get-Help -Name ConvertFrom-Json -Full` reveals that `-Depth` parameter accepts type `[Int32]` and has a default value of *1024*.
 This is already a great improvement over the older cmdlet.
 
 A discussion in issue [#3182](https://github.com/PowerShell/PowerShell/issues/3182), which continued into pull request [#8199](https://github.com/PowerShell/PowerShell/pull/8199), focused on increasing the default value.
@@ -514,7 +514,7 @@ check out the [PowerShell GitHub BI Community Dashboard](https://msit.powerbi.co
 
 ## #PS7Now #PSBlogWeek Contributors
 
-Be sure to watch for more [#PS7Now][PS7Now]! [#PSBlogWeek][PSBlogWeek] articles from my fellow contributors and myself.
+Be sure to watch for more [#PS7Now](https://leanpub.com/ps7now/)! [#PSBlogWeek]({{< relref "retired-links.md" >}}) articles from my fellow contributors and myself.
 And be sure to follow us on Twitter and add our blogs to your feed reader.
 We can help you on your PowerShell enlightenment journey, along with many others in the PowerShell community.
 

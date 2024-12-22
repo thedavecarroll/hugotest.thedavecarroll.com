@@ -9,16 +9,16 @@ categories: ["PowerShell"]
 
 ## A PowerShell Conversion Challenge
 
-In this article, the last in a series on my solution to the IronScripter [PowerShell Conversion Challenge][IronScripterChallenge],
+In this article, the last in a series on my solution to the IronScripter [PowerShell Conversion Challenge](https://ironscripter.us/a-powershell-conversion-challenge/),
 I will be exploring and solving for the remaining requirements.
 
 ## Last Week, On Creating a Class Definition
 
-In [part 1][SolutionPart1], I covered the basics for PowerShell objects and classes,
+In [part 1]({{< relref "powershell/creating-class-definition-from-object-part-1.md" >}}), I covered the basics for PowerShell objects and classes,
 the `Get-Member` command, the `Requires` statement, `ValueFromPipeline` to accept input from the pipeline, and the `StringBuilder` class.
 It solved 7 primary requirements and 1 personal requirement.
 
-In [part 2][SolutionPart2], I covered converting property and class names to PascalCase, detecting property types, and hiding properties.
+In [part 2]({{< relref "powershell/creating-class-definition-from-object-part-2.md" >}}), I covered converting property and class names to PascalCase, detecting property types, and hiding properties.
 It solved 3 personal requirements.
 
 Primary challenge requirements:
@@ -33,10 +33,6 @@ My personal requirements:
   - Any object that contains a property which is itself another complex object should generate a separate class definition.
 - Contained in a small module, as there will be a few helper functions.
 
-[SolutionPart1]: https://powershell.anovelidea.org/powershell/creating-class-definition-from-object-part-1/
-[SolutionPart2]: https://powershell.anovelidea.org/powershell/creating-class-definition-from-object-part-2/
-[IronScripterChallenge]: https://ironscripter.us/a-powershell-conversion-challenge/
-
 ## Unexpected Release of Article
 
 Just a quick note that this article was originally published on Feb 1 through an egregious error on my part.
@@ -46,9 +42,7 @@ I had created part of the outline in my `_posts` folder instead of the safer `_d
 This unexpected release has merely spurred me on toward completing it.
 
 > My site is static generated html using Jekyll, GitHub Pages, and Travis-CI.
-> If you are interested in learning how it all ties together, check out the [How I Blog][HowIBlog] article I posted in August 2018.
-
-[HowIBlog]: https://powershell.anovelidea.org/blog/how-i-blog/
+> If you are interested in learning how it all ties together, check out the [How I Blog]({{< relref "blog/how-i-blog.md" >}}) article I posted in August 2018.
 
 ## Method Classes
 

@@ -1,7 +1,9 @@
 ---
 title: Helpful Resources
 url: /resources/
+image: /images/resources.png
 readingTime: false
+layout: page
 menu: 
     main:
         name: Resources
@@ -22,7 +24,6 @@ menu:
 * [The DevOps Collective Site : PowerShell.org](https://www.powershell.org/)
 * [Unofficial PowerShell Best Practice and Style Guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
 * [Planet PowerShell RSS Feed](https://www.planetpowershell.com/feed)
-* [Twitter #PowerShell tag](https://twitter.com/search?q=%23powershell&src=tyah)
 
 ## Microsoft Links
 

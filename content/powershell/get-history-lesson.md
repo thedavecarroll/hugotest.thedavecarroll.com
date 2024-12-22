@@ -18,7 +18,7 @@ commands that you have executed in your session, up to a predefined maximum.
 {{< notice type="note" >}}
 All of the output is from PowerShell 7.0.0-preview.6.
 
-Preview 6 dropped last week on 11/21/2019, as announced by [Steve Lee][1]. If you are a fan of
+Preview 6 dropped last week on 11/21/2019, as announced by [Steve Lee](https://devblogs.microsoft.com/powershell/powershell-7-preview-6/). If you are a fan of
 PowerShell and you don't know Steve, you have some homework to do.
 {{< /notice >}}
 
@@ -93,7 +93,7 @@ class.
 The class has the following properties.
 
 | Property | Type | Description |
--|-|-|
+|-|-|-|
 | Id | `[long]` | Id of the history entry |
 | CommandLine | `[string]` | String of the command |
 | ExecutionStatus | `[System.Management.Automation.Runspaces.PipelineState]` | Execution status of associated pipeline |
@@ -105,7 +105,7 @@ The class has the following properties.
 The `Duration` property was first available in PowerShell Core 6.1.
 It is displayed by default in `Get-History` output since PowerShell 7.0.0-preview.2.
 
-It was added by PowerShell community member [Keith Hill](https://twitter.com/r_keith_hill).
+It was added by PowerShell community member [Keith Hill](https://www.linkedin.com/in/keithhill/).
 Anyone can contribute to make PowerShell even greater!
 {{< /notice >}}
 
@@ -261,13 +261,13 @@ _This method will help you digging into other objects as well._
 ([Microsoft.PowerShell.PSConsoleReadLineOptions]).DeclaredProperties.Name.Where{$_ -match 'history'}
 ```
 
-To learn more about `PSReadLine`, check out the [README file][4] for the project's GitHub repo.
+To learn more about `PSReadLine`, check out the [README file](https://github.com/PowerShell/PSReadLine/blob/master/README.md) for the project's GitHub repo.
 
 Here are a few blog posts about `PSReadLine`, albeit dated. They should, however, still provide relevant information.
 
-* [Towards a better console - PSReadLine for PowerShell command line editing][5]
-* [PSReadLine - A free PowerShell console extension][6]
-* [Change PowerShell’s Tab Complete][7]
+* [Towards a better console - PSReadLine for PowerShell command line editing](https://www.hanselman.com/blog/TowardsABetterConsolePSReadLineForPowerShellCommandLineEditing.aspx)
+* [PSReadLine - A free PowerShell console extension](https://4sysops.com/archives/psreadline-a-free-powershell-console-extension/)
+* [Change PowerShell’s Tab Complete](https://www.learnpwsh.com/change-powershells-tab-complete-behavior/)
 
 ## Summary
 
@@ -278,14 +278,3 @@ commands.
 I hope you’ve found this interesting or informative. If you have any comments or questions, please post them below.
 
 Thanks for reading!
-
-{{< notice type="note" >}}
-The overlay is a clock image from <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@fabrizioverrecchia?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Fabrizio Verrecchia"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Fabrizio Verrecchia</span></a>.
-{{< /notice >}}
-
-[1]: https://twitter.com/Steve_MSFT/status/1197686473090142208?s=20
-[2]: https://github.com/PowerShell/PowerShell/releases/tag/v7.0.0-preview.2
-[4]: https://github.com/PowerShell/PSReadLine/blob/master/README.md
-[5]: https://www.hanselman.com/blog/TowardsABetterConsolePSReadLineForPowerShellCommandLineEditing.aspx
-[6]: https://4sysops.com/archives/psreadline-a-free-powershell-console-extension/
-[7]: https://www.learnpwsh.com/change-powershells-tab-complete-behavior/

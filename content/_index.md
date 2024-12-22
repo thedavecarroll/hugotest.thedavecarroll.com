@@ -1,7 +1,8 @@
 ---
 title: Dave's Technical Journal
-image: images/header.jpeg
 description: Welcome to Dave's Technical Journal
+layout: page
+readingTime: false
 menu:
     main:
         name: Home
@@ -9,14 +10,3 @@ menu:
         params:
             icon: home
 ---
-
-![PowerShell Banner](/images/header.jpeg)
-
-Welcome to my technical journal where I share my experiences and knowledge about PowerShell, general IT, and retrocomputing. Here you'll find articles about:
-
-* PowerShell scripting and automation
-* General IT topics and solutions
-* Vintage computing and technology
-* Best practices and lessons learned
-
-Feel free to explore the articles below or use the navigation to find specific topics.

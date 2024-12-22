@@ -238,7 +238,7 @@ When notified of a change, Travis spins up an Ubuntu Linux container, installs a
 cache), clones the main branch of my blog repo, runs the `/script/cibuild` bash script I created, then deploys to the
 gh-pages branch.
 
-**script/cibuild**
+##### script/cibuild
 
 {{< gist id="74438e76f6d0de1a77d09bcd956d4203" >}}
 

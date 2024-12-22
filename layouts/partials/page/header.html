@@ -1,0 +1,70 @@
+{{ $image := partial "helper/image" (dict "Context" . "Type" "page") }}
+<header class="page-header{{ if $image.exists }} has-image{{ end }}">
+    <div class="page-header-bg{{ if $image.exists }} has-image{{ end }}">
+        {{ if $image.exists }}
+            <img src="{{ $image.permalink }}" width="{{ $image.width }}" height="{{ $image.height }}" 
+                loading="lazy" alt="Featured image of page {{ .Title }}" />
+        {{ end }}
+    </div>
+
+    <div class="page-header-content">
+        <h1 class="page-header-title">{{ .Title }}</h1>
+
+        {{ if or (not .Date.IsZero) .Params.categories .Params.tags .Site.Params.article.readingTime }}
+        <div class="page-header-details">
+            {{ if not .Date.IsZero }}
+            <div class="page-header-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="detail-icon">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.dateFormat.published) }}</time>
+            </div>
+            {{ end }}
+
+            {{ if .Params.categories }}
+            <div class="page-header-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="detail-icon">
+                    <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+                </svg>
+                {{ range $index, $el := .Params.categories }}
+                    <a href="{{ ( printf "categories/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+                    {{- if ne (add $index 1) (len $.Params.categories) }}, {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+
+            {{ if .Params.tags }}
+            <div class="page-header-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="detail-icon">
+                    <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path>
+                    <path d="M7 7h.01"></path>
+                </svg>
+                {{ range $index, $el := .Params.tags }}
+                    <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+                    {{- if ne (add $index 1) (len $.Params.tags) }}, {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+
+            {{ if .Site.Params.article.readingTime }}
+            <div class="page-header-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="detail-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                {{ i18n "article.readingTime" .ReadingTime }}
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Description }}
+        <div class="page-header-description">
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+</header>

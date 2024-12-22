@@ -6,33 +6,24 @@ tags: ["bluebirdps", "twitter", "twitter client", "twitter api", "tweet", "socia
 categories: ["PowerShell"]
 ---
 
-<blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">For today&#39;s <a href="https://twitter.com/hashtag/PowerShell?src=hash&amp;ref_src=twsrc%5Etfw">#PowerShell</a> <a href="https://twitter.com/hashtag/PSFollowFriday?src=hash&amp;ref_src=twsrc%5Etfw">#PSFollowFriday</a>, I&#39;ve pulled a random sample from <a href="https://twitter.com/ctmcisco?ref_src=twsrc%5Etfw">@ctmcisco</a>&#39;s Twitter List, Powershell.<a href="https://t.co/Ja8SzseEtS">https://t.co/Ja8SzseEtS</a><a href="https://twitter.com/bgelens?ref_src=twsrc%5Etfw">@bgelens</a> <a href="https://twitter.com/IISResetMe?ref_src=twsrc%5Etfw">@IISResetMe</a> <a href="https://twitter.com/JM2K69?ref_src=twsrc%5Etfw">@JM2K69</a> <a href="https://twitter.com/markwragg?ref_src=twsrc%5Etfw">@markwragg</a> <a href="https://twitter.com/awickham?ref_src=twsrc%5Etfw">@awickham</a> <a href="https://twitter.com/psCookieMonster?ref_src=twsrc%5Etfw">@psCookieMonster</a> <a href="https://twitter.com/DarwinTheorizes?ref_src=twsrc%5Etfw">@DarwinTheorizes</a> <a href="https://twitter.com/singhprateik?ref_src=twsrc%5Etfw">@singhprateik</a> <a href="https://twitter.com/obilogic?ref_src=twsrc%5Etfw">@obilogic</a> <a href="https://twitter.com/PSAdm?ref_src=twsrc%5Etfw">@PSAdm</a></p>&mdash; Dave Carroll (@thedavecarroll) <a href="https://twitter.com/thedavecarroll/status/1400817011194830849?ref_src=twsrc%5Etfw">June 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ## Introduction
 
-Last year, I began exploring the [Twitter API][TwitterAPI] and wrote a module that adhered to
+Last year, I began exploring the [Twitter API]({{< relref "retired-links.md" >}}) and wrote a module that adhered to
 PowerShell and general development best practices, one that seeks community input and involvement.
 
-Since then I've released a few versions of the [BluebirdPS][BluebirdPS] module and
-I am using it to generate my [#PSFollowFriday][PSFollowFriday] Tweets.
+Since then I've released a few versions of the [BluebirdPS]({{< relref "retired-links.md" >}}) module and
+I am using it to generate my [#PSFollowFriday]({{< relref "retired-links.md" >}}) Tweets.
 
 In the article that follows, I will take you through the BluebirdPS commands that I use to create these Tweets.
 
-[TwitterAPI]: https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api
-[BluebirdPS]: https://www.powershellgallery.com/packages/BluebirdPS
-[PSFollowFriday]: https://twitter.com/search?q=%23PSFollowFriday&f=live
-
 ### #PSFollowFriday
 
-[Jeff Hicks][JeffHicks] started the #PSFollowFriday hashtag on Twitter during last August's [#PSTweetChat][PSTweetChat].
+{{< influencer "jeffhicks" >}} started the #PSFollowFriday hashtag on Twitter during last August's [#PSTweetChat]({{< relref "retired-links.md" >}}).
 Anyone in the PowerShell community is welcome to suggest people or sites that engage with, or contribute in, the PowerShell online community.
-
-[JeffHicks]: https://jdhitsolutions.com/blog/
-[PSTweetChat]: https://github.com/jdhitsolutions/PSTweetChat
 
 ## BluebirdPS Hatched
 
-My first obstacle to overcome in writing the module was [OAuth 1.0a][OAuth10a] authentication,
+My first obstacle to overcome in writing the module was `OAuth 1.0a` authentication,
 which was required by the Twitter API (no v2 endpoints had been released at that time).
 I wrote a PowerShell custom class, `[OAuthParameters]` and was satisfied that the class handled the job adequately.
 Creating an OAuth 1.0a authentication header is no small feat.
@@ -45,8 +36,6 @@ I presented the module to two PowerShell user groups, in October and December, a
 Near the end of November, I published the first version to the PowerShell Gallery with a quick follow up
 to address a few small issues discovered by Jeff Hicks.
 
-[OAuth10a]: https://developer.twitter.com/en/docs/authentication/oauth-1-0a
-
 ## BluebirdPS Reborn
 
 In the months that followed, I basically rewrote the entire module.
@@ -57,7 +46,7 @@ In fact, almost all output, from the API response to custom exceptions, are now 
 
 Here are some the new features in the latest version.
 
-- Support for [Twitter API v2: Early Access][TwitterAPIV2]
+- Support for [Twitter API v2: Early Access]({{< relref "retired-links.md" >}})
 - Complete management for:
   - Saved searches
   - List, list membership, and list subscriptions
@@ -69,10 +58,7 @@ Here are some the new features in the latest version.
 - C# classes for most API responses, and for request generation and authentication
 - Parameter consistency has been enforced, for example all references to the UserName instead of ScreenName and Id for the numerical identifier regardless of object type.
 - Nearly 20 more commands than the previous release.
-- New domain for online documentation, [docs.bluebirdps.dev][DocsBluebirdPS].
-
-[TwitterAPIV2]: https://developer.twitter.com/en/docs/twitter-api/early-access
-[DocsBluebirdPS]: https://docs.bluebirdps.dev
+- New domain for online documentation, [docs.bluebirdps.dev]({{< relref "retired-links.md" >}})
 
 Though I haven't used it to announce any articles yet (my first use case), I did find it a great help in creating my #PSFollowFriday tweets.
 
@@ -131,13 +117,11 @@ FullName                              MemberCount SubscriberCount
 @gpunktschmitz/powershell                      93              31
 ```
 
-For this example, I'll use [Francisco][ctmcisco]'s PowerShell list.
+For this example, I'll use Francisco's PowerShell list.
 
 ```powershell
 PS > $List = Get-TwitterList -OwnerUserName ctmcisco -Slug powershell
 ```
-
-[ctmcisco]: https://twitter.com/ctmcisco
 
 ### Get List Membership
 
@@ -182,13 +166,11 @@ Based on this, we need to split up the number of users that we use for the `Get-
 
 #### Split-Array
 
-I found `Split-Array` in a [StackOverflow answer][SplitArray] and it works perfectly for this.
+I found `Split-Array` in a [StackOverflow answer](https://stackoverflow.com/questions/45948580/slice-a-powershell-array-into-groups-of-smaller-arrays) and it works perfectly for this.
 
 ```powershell
 PS > $ListMemberUserNames = $ListMembers | Split-Array -Size 100 | ForEach-Object { Get-TwitterUser -User $_ }
 ```
-
-[SplitArray]: https://stackoverflow.com/questions/45948580/slice-a-powershell-array-into-groups-of-smaller-arrays
 
 ### Get Active Members
 
@@ -277,18 +259,13 @@ Finally, the Tweet text was published to Twitter.
 If you curate a Twitter List of PowerShell community members, please let me know with a comment below or with a Tweet or DM.
 *Bonus points, a gold star, and kudos to you if you use BluebirdPS to send me the Tweet or DM.*
 
-Learn how to [get started with BluebirdPS][BluebirdPSGettingStarted] today!
+Learn how to [get started with BluebirdPS]({{< relref "retired-links.md" >}}) today!
 
 If you have use cases or ideas on how to use BluebirdPS, please add a topic
-or join in with others in [BluebirdPS's repo discussion][BluebirdPSDiscussion].
-I ask you to submit any [bug reports][BluebirdPSBugReport] as you encounter errors
-or a [feature request][BluebirdPSFeatureRequest] when you have an idea that could benefit other BluebirdPS users.
+or join in with others in BluebirdPS's repo discussion.
+I ask you to submit any bug reports as you encounter errors
+or a feature request when you have an idea that could benefit other BluebirdPS users.
 
 I hope you’ve found this interesting or informative.
 I really would like to hear your thoughts on this article.
 If you have any comments or questions, please post them below.
-
-[BluebirdPSGettingStarted]: https://docs.bluebirdps.dev/en/latest/prerequisites/
-[BluebirdPSDiscussion]: https://bit.ly/BluebirdPSDiscussion
-[BluebirdPSBugReport]: https://bit.ly/BluebirdPSBugReport
-[BluebirdPSFeatureRequest]: https://bit.ly/BluebirdPSFeatureRequest

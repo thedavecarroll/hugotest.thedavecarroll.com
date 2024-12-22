@@ -1,7 +1,9 @@
 ---
 title: About
 url: /about/
+image: /images/header.jpeg
 readingTime: false
+layout: page
 menu: 
     main:
         name: About
@@ -10,7 +12,16 @@ menu:
             icon: book
 ---
 
-![Dave's Technical Journal](/images/header.jpeg)
+## About this site
+
+Welcome to my technical journal where I share my experiences and knowledge about PowerShell, general IT, and retrocomputing. Here you'll find articles about:
+
+* PowerShell scripting and automation
+* General IT topics and solutions
+* Best practices and lessons learned
+* Vintage computing and technology
+
+## About me
 
 I started my career nearly 30 years ago at a small Mom-and-Pop computer store, building and repairing home computer systems and peripherals.
 To put that time into perspective, we rented parallel CD-ROM drives and CD-ROM based games because the drives were cost prohibitive to the average gamer.

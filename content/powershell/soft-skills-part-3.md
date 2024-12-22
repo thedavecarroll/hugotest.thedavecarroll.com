@@ -43,7 +43,7 @@ Do what you can to help your team find enjoyment in their job, everyday.
 #### How I Learned About Motivation
 
 Before I started my IT career path, I worked for several fast-food restaurants.
-I learned quite a bit about managing people and tasks at one of them, [Garibaldi's Pizza][GaribaldisPizza] in Memphis, Tennessee.
+I learned quite a bit about managing people and tasks at one of them, [Garibaldi's Pizza](http://garibaldispizza.com/) in Memphis, Tennessee.
 Of their four locations (in 1991), I worked at the one near the University of Memphis eventually becoming a shift manager, which was my first management position.
 One Sunday afternoon, we were busy in-house and with deliveries.
 I received a phone call from a catering customer confirming their order for 30 people and the delivery time, just one hour away.
@@ -63,8 +63,6 @@ As it turned out, I motivated my team to go above and beyond.
 We worked together and delivered the pasta, salad, and garlic bread to the customer on time.
 We also handled the influx of in-house customers without complaint.
 I thanked everyone that pitched in or stepped up for additional work and gave them free meals (and drinks after hours at a local pub).
-
-[GaribaldisPizza]: http://garibaldispizza.com/
 
 ### How to Inspire Others
 

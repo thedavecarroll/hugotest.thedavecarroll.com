@@ -238,9 +238,9 @@ You can then attempt `git pull` again.
 
 ### GitHub Action Debug Logs
 
-I found a [GitHub ToolKit][actions-toolkit] that discusses how to configure [Step Debug and Runner Diagnostic Logs][action-debugging].
+I found a [GitHub ToolKit](https://github.com/actions/toolkit) that discusses how to configure [Step Debug and Runner Diagnostic Logs]( https://github.com/actions/toolkit/blob/master/docs/action-debugging.md).
 
-Basically, you [add a `secret`][creating-encrypted-secrets] to your repository for whichever log you want to enable.
+Basically, you [add a `secret`](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets) to your repository for whichever log you want to enable.
 
 ```pre
 ACTIONS_STEP_DEBUG   true
@@ -285,15 +285,9 @@ Be on the lookup for an upcoming post on how to use a **Docker** image as a loca
 
 ## Reference
 
-Feel free to check out the action's [author's blog post][autopublish-jekyll-draft] on using `Jekyll Publish Drafts`.
-Also, if you want want to dig into the action to see how it works, here is the [GitHub repo][ga-jekyll-publish-draft].
+Feel free to check out the action's [author's blog post](https://soywiz.com/autopublish-jekyll-drafts/) on using `Jekyll Publish Drafts`.
+Also, if you want want to dig into the action to see how it works, here is the [GitHub repo](https://github.com/soywiz/github-action-jekyll-publish-drafts).
 
 {{< update date="2020-06-18" >}}
 Updated references of master branch to main.
 {{< /update >}}
-
-[autopublish-jekyll-draft]: https://soywiz.com/autopublish-jekyll-drafts/
-[ga-jekyll-publish-draft]: https://github.com/soywiz/github-action-jekyll-publish-drafts
-[actions-toolkit]: https://github.com/actions/toolkit
-[action-debugging]: https://github.com/actions/toolkit/blob/master/docs/action-debugging.md
-[creating-encrypted-secrets]: https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets

@@ -1,23 +1,25 @@
 .article-header {
     position: relative;
     margin-bottom: 1rem;
+    min-height: 120px;
  
     &.has-image {
         .article-details {
-            padding-right: 80px;  // Reduced from 160px
+            padding-right: calc(160px + 1rem); // Image width + padding
         }
     }
 
     .article-image {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 1rem; // Match padding of article-details
+        right: 1rem; // Match padding of article-details
         width: 160px;
-        height: 80%;
+        height: auto;
+        aspect-ratio: 1 / 1; // Square image
         
         img {
-            width: 80%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             border-radius: var(--card-border-radius);
         }
@@ -29,5 +31,56 @@
         background-color: rgba(var(--card-background-color), 0.9);
         padding: 1rem;
         border-radius: var(--card-border-radius);
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
     }
 }
+
+// Add these new styles for the header and meta sections
+.article-title-header {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    min-height: 160px; // Match image height
+}
+
+.article-meta {
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border-color);
+}
+
+// .article-header {
+//     position: relative;
+//     margin-bottom: 1rem;
+ 
+//     &.has-image {
+//         .article-details {
+//             padding-right: 80px;  // Reduced from 160px
+//         }
+//     }
+
+//     .article-image {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         width: 160px;
+//         height: 80%;
+        
+//         img {
+//             width: 80%;
+//             height: 80%;
+//             object-fit: cover;
+//             border-radius: var(--card-border-radius);
+//         }
+//     }
+ 
+//     .article-details {
+//         position: relative;
+//         z-index: 1;
+//         background-color: rgba(var(--card-background-color), 0.9);
+//         padding: 1rem;
+//         border-radius: var(--card-border-radius);
+//     }
+// }
